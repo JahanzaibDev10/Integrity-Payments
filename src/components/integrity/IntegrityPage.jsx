@@ -1,0 +1,186 @@
+import Link from "next/link";
+import HeaderOne from "@/components/header/HeaderOne";
+import FooterOne from "@/components/footer/FooterOne";
+import Breadcrumb from "@/components/Breadcrumb";
+import BackToTop from "@/components/BackToTop";
+import { pageContent } from "@/data/siteContent";
+
+const cardTone = ["one", "two", "three", "four", "five", "six"];
+
+const getFieldType = (field) => {
+  const label = field.toLowerCase();
+
+  if (label.includes("email") || label.includes("e-mail")) return "email";
+  if (label.includes("phone") || label.includes("telephone") || label.includes("number")) return "tel";
+  if (label.includes("zip")) return "text";
+  return "text";
+};
+
+const getFieldName = (field) => field.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+export default function IntegrityPage({ slug }) {
+  const content = pageContent[slug];
+
+  if (!content) return null;
+
+  const breadcrumbs = [
+    { label: "Home", link: "/" },
+    { label: content.title },
+  ];
+
+  return (
+    <>
+      <HeaderOne />
+      <Breadcrumb title={content.title} breadcrumbs={breadcrumbs} />
+      <main>
+        <section className={`rts-service-area rts-section-gap integrity-page-${slug}`}>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-10 offset-lg-1">
+                <div className="rts-title-area integrity-page-title text-center" data-page-title={content.title}>
+                  <p className="pre-title">Integrity Payments</p>
+                  <h2 className="title">{content.title}</h2>
+                  <p className="disc mt--20">{content.description}</p>
+                  {content.cta ? (
+                    <Link className="rts-btn btn-primary color-h-black mt--30" href="/contact">
+                      {content.cta}
+                    </Link>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+
+            {content.testimonials ? (
+              <div className="row g-5 mt--30">
+                {content.testimonials.map((item) => (
+                  <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12" key={`${item.name}-${item.company}`}>
+                    <article className="integrity-template-card">
+                      <p className="disc">"{item.quote}"</p>
+                      <h5 className="title mt--20">{item.name}</h5>
+                      <span>{item.company}</span>
+                    </article>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <>
+                {content.image ? (
+                  <div className="row align-items-center g-5 mt--50 integrity-service-showcase">
+                    <div className="col-lg-6 col-md-12">
+                      <div className="integrity-service-image">
+                        <img src={content.image} alt={content.imageAlt || content.title} />
+                      </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12">
+                      <div className="integrity-service-copy">
+                        <p className="pre-title">Built Around Your Business</p>
+                        <h3 className="title">{content.showcaseTitle || content.title}</h3>
+                        {content.intro ? <p className="disc">{content.intro}</p> : null}
+                        {content.highlights?.length ? (
+                          <ul className="integrity-template-list integrity-service-highlights">
+                            {content.highlights.map((item) => (
+                              <li key={item}>{item}</li>
+                            ))}
+                          </ul>
+                        ) : null}
+                        <Link className="rts-btn btn-primary color-h-black mt--20" href="/contact">
+                          Talk to an Advisor
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+
+                {content.sections?.length ? (
+                  <div className="row g-5 mt--30">
+                    {content.sections.map((section, index) => (
+                      <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12" key={section.label || section.title || section}>
+                        <article className={`service-one-inner ${cardTone[index % cardTone.length]} integrity-template-card`}>
+                          <div className="service-details">
+                            {section.href ? (
+                              <Link href={section.href}>
+                                <h5 className="title">{section.label || section.title || section}</h5>
+                              </Link>
+                            ) : (
+                              <h5 className="title">{section.label || section.title || section}</h5>
+                            )}
+                            {section.description ? <p className="disc">{section.description}</p> : null}
+                            {section.summary ? <p className="disc">{section.summary}</p> : null}
+                            {section.bullets?.length ? (
+                              <ul className="integrity-template-list">
+                                {section.bullets.map((item) => (
+                                  <li key={item}>{item}</li>
+                                ))}
+                              </ul>
+                            ) : null}
+                            {section.href ? (
+                              <Link className="rts-read-more btn-primary" href={section.href}>
+                                <i className="far fa-arrow-right" />
+                                Learn More
+                              </Link>
+                            ) : null}
+                          </div>
+                        </article>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center mt--30">
+                    <Link className="rts-btn btn-primary color-h-black" href="/contact">
+                      Contact Us
+                    </Link>
+                  </div>
+                )}
+
+                {content.formFields?.length ? (
+                  <div className="row mt--50 align-items-stretch integrity-contact-form-row">
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div className="contact-image-one integrity-contact-card">
+                        <img src="/images/integrity-payments/business-brainstorming.jpg" alt="Integrity Payments consultation" />
+                      </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div className="contact-form-area-one integrity-contact-card">
+                        <div className="rts-title-area contact text-start">
+                          <p className="pre-title">Contact Integrity Payments</p>
+                          <h2 className="title">Send Us Your Details</h2>
+                        </div>
+                        <form id={`${slug}-contact-form`} action="#" method="post">
+                          <div className="name-email">
+                            {content.formFields.slice(0, 2).map((field) => (
+                              <input
+                                key={field}
+                                type={getFieldType(field)}
+                                placeholder={field}
+                                name={getFieldName(field)}
+                                required
+                              />
+                            ))}
+                          </div>
+                          {content.formFields.slice(2).map((field) =>
+                            field.toLowerCase().includes("message") ||
+                            field.toLowerCase().includes("why") ||
+                            field.toLowerCase().includes("help") ? (
+                              <textarea key={field} placeholder={field} name={getFieldName(field)} />
+                            ) : (
+                              <input key={field} type={getFieldType(field)} placeholder={field} name={getFieldName(field)} />
+                            )
+                          )}
+                          <button type="submit" className="rts-btn btn-primary">
+                            Submit Message
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+              </>
+            )}
+          </div>
+        </section>
+      </main>
+      <FooterOne />
+      <BackToTop />
+    </>
+  );
+}
