@@ -11,7 +11,7 @@ function Feature() {
                     <div className="row bg-white-feature  pt--120 pb--120">
                         <div className="col-xl-6 col-lg-12">
                             <div className="feature-left-area">
-                                <img src="assets/images/feature/01.png" alt="" />
+                                <img src="/images/integrity-payments/hero/accept-payments-anywhere.jpg" alt="Customer accepting secure payments anywhere" />
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-12">

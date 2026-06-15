@@ -1,4 +1,4 @@
-import IntegrityPage from "@/components/integrity/IntegrityPage";
+import ContactUsPage from "@/components/integrity/ContactUsPage";
 
 export const metadata = {
   title: "Contact",
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <IntegrityPage slug="contact" />;
+  return <ContactUsPage />;
 }

@@ -92,6 +92,34 @@ export default function IntegrityPage({ slug }) {
                   </div>
                 ) : null}
 
+                {content.detailBlocks?.length ? (
+                  <div className="row g-5 mt--50">
+                    {content.detailBlocks.map((block, index) => (
+                      <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12" key={block.title}>
+                        <article className={`integrity-detail-block ${cardTone[index % cardTone.length]}`}>
+                          {block.image ? (
+                            <div className="integrity-detail-image">
+                              <Image src={block.image} alt={block.title} width={720} height={480} sizes="(max-width: 991px) 100vw, 33vw" />
+                            </div>
+                          ) : null}
+                          <div className="integrity-detail-copy">
+                            <span>{block.kicker || "What You Get"}</span>
+                            <h5>{block.title}</h5>
+                            <p>{block.description}</p>
+                            {block.bullets?.length ? (
+                              <ul className="integrity-template-list">
+                                {block.bullets.map((item) => (
+                                  <li key={item}>{item}</li>
+                                ))}
+                              </ul>
+                            ) : null}
+                          </div>
+                        </article>
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+
                 {content.sections?.length ? (
                   <div className="row g-5 mt--30">
                     {content.sections.map((section, index) => (
@@ -171,6 +199,27 @@ export default function IntegrityPage({ slug }) {
                             Submit Message
                           </button>
                         </form>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+
+                {content.faqs?.length ? (
+                  <div className="row mt--50">
+                    <div className="col-lg-10 offset-lg-1">
+                      <div className="rts-title-area text-center mb--30">
+                        <p className="pre-title">Helpful Details</p>
+                        <h3 className="title">Common Questions</h3>
+                      </div>
+                      <div className="row g-4">
+                        {content.faqs.map((faq) => (
+                          <div className="col-lg-6 col-md-6 col-sm-12 col-12" key={faq.question}>
+                            <article className="integrity-faq-card">
+                              <h5>{faq.question}</h5>
+                              <p>{faq.answer}</p>
+                            </article>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>

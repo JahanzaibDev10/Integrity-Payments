@@ -1,12 +1,10 @@
 .heroWrapper {
   position: relative;
   width: 100%;
-  height: 100svh;
-  min-height: 700px;
+  height: 780px;
+  min-height: 680px;
   overflow: hidden;
-  background-color: #0b0c10;
-  display: flex;
-  align-items: center;
+  background: #fff0f0;
 }
 
 .swiperContainer {
@@ -20,272 +18,292 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Moved to the right */
-  padding: 0 10%;
+  justify-content: flex-end;
+  padding: 130px 10% 90px;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
-/* Images mapping based on className from content */
+.slideInner::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 30%;
+  left: 54%;
+  border-radius: 50%;
+  background: rgba(255, 75, 80, 0.13);
+  z-index: 1;
+}
+
+.slideInner::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 5.5%;
+  bottom: 54px;
+  border-radius: 50%;
+  border: 8px dotted rgba(255, 255, 255, 0.95);
+  z-index: 1;
+}
+
 .one {
-  background-image: url('/assets/images/banner/banner-01.jpg');
+  background-image: url("/assets/images/banner/banner-03.jpg");
 }
+
 .two {
-  background-image: url('/assets/images/banner/banner-02.jpg');
+  background-image: url("/assets/images/banner/banner-02.jpg");
 }
+
 .three {
-  background-image: url('/assets/images/banner/banner-03.jpg');
+  background-image: url("/assets/images/banner/banner-01.jpg");
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Very light overlay: transparent on left/center, slightly dark on right for text readability */
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.6) 100%
-  );
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 240, 240, 0.1) 48%, rgba(255, 240, 240, 0.36) 100%);
   z-index: 1;
+  pointer-events: none;
 }
 
 .contentBox {
   position: relative;
   z-index: 2;
-  max-width: 700px;
-  /* Removed glassmorphism, no background */
-  padding: 2rem 0;
+  width: min(760px, 100%);
+  padding: 0;
   opacity: 0;
-  transform: translateX(50px);
-  text-align: right; /* Text aligned to right */
+  transform: translateY(26px);
+  text-align: left;
 }
 
 .activeContent {
-  animation: fadeLeft 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+  animation: fadeUp 900ms cubic-bezier(0.16, 1, 0.3, 1) 240ms forwards;
 }
 
 .preTitle {
   display: inline-block;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.875rem;
-  font-weight: 700;
+  margin-bottom: 34px;
+  color: #31384b;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+}
+
+.preTitle span::first-letter {
   color: var(--color-primary);
-  margin-bottom: 1.5rem;
-  padding: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+
+.preTitle span {
+  color: #31384b;
+}
+
+.preTitle span {
+  background: linear-gradient(90deg, var(--color-primary) 0 8ch, #31384b 8ch 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 500;
 }
 
 .title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 4.5rem;
+  margin: 0 0 28px;
+  color: #273144;
+  font-size: 70px;
   font-weight: 800;
-  line-height: 1.1;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
+  line-height: 1.17;
   letter-spacing: 0;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .title span {
+  display: inline;
   color: var(--color-primary);
-  display: inline-block;
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .description {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.25rem;
+  max-width: 650px;
+  margin: 0 0 46px;
+  color: #5d6577;
+  font-size: 19px;
+  font-weight: 400;
   line-height: 1.6;
-  color: #f1f5f9;
-  margin-bottom: 2.5rem;
-  margin-left: auto;
-  max-width: 600px;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .ctaButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2.5rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 1.125rem;
+  min-height: 58px;
+  padding: 0 32px;
+  border-radius: 14px;
   color: #ffffff;
-  background: var(--color-primary);
-  border-radius: 50px;
+  background: #ff4d52;
+  font-size: 16px;
+  font-weight: 700;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 20px rgba(223, 10, 10, 0.28);
-  position: relative;
-  overflow: hidden;
+  transition: all 0.25s ease;
+  box-shadow: 0 16px 26px rgba(255, 77, 82, 0.22);
 }
 
 .ctaButton:hover {
-  transform: translateY(-3px);
-  background: var(--color-primary-alta);
-  box-shadow: 0 15px 25px rgba(223, 10, 10, 0.22);
-  color: #1C2539;
+  transform: translateY(-2px);
+  background: var(--color-primary);
+  color: #ffffff;
 }
 
-/* Animations */
-@keyframes fadeLeft {
+@keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(26px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
-/* Navigation Overrides */
 .sliderNav {
   position: absolute;
-  bottom: 50px;
-  right: 10%;
+  right: 36px;
+  bottom: 26px;
   z-index: 10;
   display: flex;
-  gap: 15px;
+  gap: 12px;
 }
 
-.navPrev, .navNext {
-  width: 50px;
-  height: 50px;
+.navPrev,
+.navNext {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #ff4d52;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #ffffff;
+  color: #ff1f26;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
   cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.25s ease;
 }
 
-.navPrev:hover, .navNext:hover {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  transform: scale(1.1);
+.navPrev:hover,
+.navNext:hover {
+  background: #ff4d52;
+  color: #ffffff;
 }
 
-/* Responsive */
-@media (max-width: 1200px) {
-  .title {
-    font-size: 4rem;
-  }
+@media (max-width: 1400px) {
   .slideInner {
-    padding: 0 8%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
-}
 
-@media (max-width: 1024px) {
   .title {
-    font-size: 3.5rem;
+    font-size: 60px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .heroWrapper {
-    height: calc(100svh - 60px);
+    height: auto;
+    min-height: 620px;
+  }
+
+  .slideInner {
+    min-height: 620px;
+    padding: 150px 40px 96px;
+    background-position: 36% center;
+  }
+
+  .slideInner::before {
+    left: auto;
+    right: 10%;
+    top: 26%;
+  }
+
+  .slideInner::after {
+    width: 230px;
+    height: 230px;
+    right: -40px;
+  }
+
+  .contentBox {
+    max-width: 660px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroWrapper {
     min-height: 560px;
   }
-  .slideInner {
-    min-height: 100%;
-    padding: 92px 5% 86px;
-    align-items: flex-end;
-    justify-content: center;
-    background-size: contain;
-    background-position: center top;
-    background-color: #f5eeee;
-  }
-  .overlay {
-    /* Darken ONLY the bottom to keep the picture totally clear at top */
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 42%,
-      rgba(0, 0, 0, 0.86) 100%
-    );
-  }
-  .contentBox {
-    text-align: center;
-    margin-top: auto;
-    max-width: 560px;
-    padding: 0;
-    transform: translateY(30px);
-    width: 100%;
-  }
-  .activeContent {
-    animation: fadeUpMobile 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
-  }
-  @keyframes fadeUpMobile {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  .title {
-    font-size: 2.5rem;
-    line-height: 1.12;
-    margin-bottom: 1rem;
-  }
-  .description {
-    font-size: 1rem;
-    line-height: 1.55;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
-    max-width: 460px;
-  }
-  .sliderNav {
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 20px;
-  }
-}
 
-@media (max-width: 480px) {
-  .heroWrapper {
-    min-height: 430px;
-  }
   .slideInner {
-    padding: 76px 18px 72px;
+    min-height: 560px;
+    padding: 128px 22px 86px;
+    align-items: flex-end;
+    background-position: 30% center;
   }
-  .title {
-    font-size: 1.65rem;
-    line-height: 1.12;
-    margin-bottom: 0.7rem;
+
+  .overlay {
+    background: rgba(255, 240, 240, 0.8);
   }
-  .description {
-    font-size: 0.82rem;
-    line-height: 1.42;
-    margin-bottom: 1rem;
+
+  .slideInner::before {
+    width: 110px;
+    height: 110px;
+    top: 25%;
+    right: 12%;
   }
+
+  .slideInner::after {
+    width: 170px;
+    height: 170px;
+    border-width: 6px;
+    right: -60px;
+    bottom: 56px;
+  }
+
   .preTitle {
-    font-size: 0.62rem;
-    line-height: 1.35;
-    letter-spacing: 1px;
-    margin-bottom: 0.55rem;
+    margin-bottom: 18px;
+    font-size: 12px;
   }
+
+  .title {
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 28px;
+  }
+
   .ctaButton {
-    width: 100%;
-    max-width: 232px;
-    min-height: 48px;
-    padding: 0.78rem 1.25rem;
-    font-size: 0.84rem;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-size: 14px;
   }
+
   .sliderNav {
-    bottom: 14px;
+    right: 22px;
+    bottom: 18px;
   }
+
   .navPrev,
   .navNext {
     width: 40px;
@@ -293,35 +311,17 @@
   }
 }
 
-@media (max-width: 380px) and (max-height: 620px) {
-  .heroWrapper {
-    min-height: calc(100svh - 60px);
-  }
+@media (max-width: 420px) {
   .slideInner {
-    padding: 60px 16px 62px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
+
   .title {
-    font-size: 1.42rem;
+    font-size: 30px;
   }
+
   .description {
-    font-size: 0.74rem;
-    margin-bottom: 0.8rem;
-  }
-  .preTitle {
-    font-size: 0.56rem;
-    margin-bottom: 0.45rem;
-  }
-  .ctaButton {
-    max-width: 216px;
-    min-height: 44px;
-    font-size: 0.78rem;
-  }
-  .sliderNav {
-    bottom: 10px;
-  }
-  .navPrev,
-  .navNext {
-    width: 36px;
-    height: 36px;
+    font-size: 14px;
   }
 }

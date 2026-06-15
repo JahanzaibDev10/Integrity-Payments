@@ -61,38 +61,38 @@ export const home = {
   slides: [
     {
       className: "one",
-      preTitle: "Welcome to Resilient Payments",
-      title: "Payments. Payroll. Perfect.",
-      emphasis: "Payroll",
+      preTitle: "Welcome! Start Growing Your Business Today",
+      title: "Make Business Easier With Resilient Payments",
+      emphasis: "Business Easier",
       description:
-        "Best-in-class business operating solutions with personalized service, low-cost options, and transparent support.",
-      cta: "View Products",
+        "Best-in-class payment, payroll, lending, insurance, and web solutions with personalized service and transparent support.",
+      cta: "Get Consultancy",
       href: "/products",
     },
     {
       className: "two",
-      preTitle: "Accept payments securely",
-      title: "Accept Payments Securely. Anywhere.",
-      emphasis: "Securely",
+      preTitle: "Accept Payments Securely",
+      title: "Make Payment Acceptance Simple Anywhere",
+      emphasis: "Payment Acceptance",
       description:
         "Card-present, eCommerce, invoicing, mobile, B2B/B2G, subscription, and text-to-pay solutions tailored to your business.",
-      cta: "Explore Payments",
+      cta: "Get Consultancy",
       href: "/payments",
     },
     {
       className: "three",
-      preTitle: "Pay your employees with ease",
-      title: "Payroll and HR Support Built Around You",
-      emphasis: "HR Support",
+      preTitle: "Pay Your Employees With Ease",
+      title: "Make Payroll and HR Work With Confidence",
+      emphasis: "Payroll and HR",
       description:
         "Dedicated U.S.-based payroll support, HR resources, tax services, time and attendance, benefits, and retirement plan options.",
-      cta: "Payroll & HR",
+      cta: "Get Consultancy",
       href: "/payroll",
     },
   ],
   overviewTitle: "We Make Operating Your Business Easier",
   overview:
-    "Our mission at Resilient Payments is to provide our customers with the best personalized service in the industry. We tailor fit best-in-class, low-cost solutions for merchants with honesty, transparency, and Integrity.",
+    "Our mission at Resilient Payments is to provide customers with personalized service, practical business tools, and transparent recommendations. We tailor-fit low-cost solutions for merchants with honesty, clarity, and the Golden Rule in Business.",
   overviewBullets: [
     "Accept payments",
     "Pay your employees",
@@ -119,6 +119,75 @@ export const home = {
       description:
         "We do everything with the utmost Integrity. We practice the Golden Rule; it is the only way we know.",
       image: "/images/integrity-payments/support.png",
+    },
+  ],
+  stats: [
+    { value: 24, suffix: "/7", label: "Support Availability" },
+    { value: 10, suffix: "+", label: "Service Categories" },
+    { value: 25, suffix: "+", label: "Years of Industry Experience" },
+    { value: 100, suffix: "%", label: "Integrity-First Approach" },
+  ],
+  operationsTitle: "Business support that fits the way you work",
+  operationsDescription:
+    "From the first transaction to payroll, benefits, lending, insurance, and digital tools, Resilient Payments helps owners simplify the daily work of running a business.",
+  featuredSolutions: [
+    {
+      title: "Payments Built Around You",
+      href: "/payments",
+      image: "/images/integrity-payments/hero/accept-payments-anywhere.jpg",
+      category: "Credit Card Processing, Text-to-Pay",
+      description:
+        "Accept payments in person, online, by invoice, by subscription, or by text with options designed around cost reduction and customer convenience.",
+    },
+    {
+      title: "Payroll and HR Without the Guesswork",
+      href: "/payroll",
+      image: "/images/integrity-payments/hero/payroll-hr.jpg",
+      category: "Payroll, HR, Benefits",
+      description:
+        "Get payroll, tax services, time and attendance, workers comp, employee benefits, and retirement support in one conversation.",
+    },
+    {
+      title: "Capital, Coverage, and Growth Tools",
+      href: "/lending",
+      image: "/images/integrity-payments/hero/business-lending.jpg",
+      category: "Lending, Insurance, Web",
+      description:
+        "Explore working capital, insurance support, websites, eCommerce, and tools that help your business move forward with confidence.",
+    },
+  ],
+  insights: [
+    {
+      title: "How Text-to-Pay Can Reduce Friction",
+      href: "/text-message-tools",
+      label: "Billing Tools",
+      summary:
+        "Let customers pay through a secure link sent by text while your team keeps billing conversations simple and fast.",
+      image: "/images/integrity-payments/hero/text-message-tools.jpg",
+    },
+    {
+      title: "Choosing Payment Tools for Modern Checkout",
+      href: "/payments",
+      label: "Payments",
+      summary:
+        "Compare in-person, online, mobile, invoice, recurring, and B2B payment options before choosing a processing setup.",
+      image: "/images/integrity-payments/hero/accept-payments-anywhere.jpg",
+    },
+    {
+      title: "Payroll Support That Keeps Owners Focused",
+      href: "/payroll",
+      label: "Payroll",
+      summary:
+        "Dedicated payroll and HR support can reduce manual work, improve reporting, and help teams get paid accurately.",
+      image: "/images/integrity-payments/hero/payroll-hr.jpg",
+    },
+    {
+      title: "Funding Options for the Next Business Move",
+      href: "/lending",
+      label: "Lending",
+      summary:
+        "Working capital, lines of credit, equipment financing, and SBA options can support expansion, inventory, or cash flow.",
+      image: "/images/integrity-payments/hero/business-lending.jpg",
     },
   ],
   paymentFeatures: [
@@ -267,7 +336,19 @@ export const testimonials = [
 export const pageContent = {
   products: {
     title: "Services",
-    description: "Payments, payroll, lending, web development, ATM, insurance, and messaging tools in one business operating platform.",
+    description:
+      "Explore practical business services from Resilient Payments: payment processing, POS systems, payroll, lending, retirement support, messaging tools, ATM machines, business insurance, and web development.",
+    cta: "Request a Service Consultation",
+    image: "/images/integrity-payments/home/business-brainstorming.jpg",
+    imageAlt: "Business owners reviewing Resilient Payments service options",
+    showcaseTitle: "One Business Partner for Daily Operations",
+    intro:
+      "The right service mix should reduce friction, improve cash flow, protect the business, and make everyday operations easier. Resilient Payments helps owners compare options and choose tools that fit how they already work.",
+    highlights: [
+      "Payment, payroll, POS, lending, insurance, web, ATM, and messaging support",
+      "Solutions tailored for brick-and-mortar, mobile, service, nonprofit, and eCommerce teams",
+      "A consultative process focused on cost, reliability, support, and long-term fit",
+    ],
     sections: products,
   },
   payments: {
@@ -452,17 +533,46 @@ export const pageContent = {
     title: "Partner With Us",
     description:
       "Resilient Payments believes in true win/win partnerships. We make partnerships easy and represent referral partners with professionalism and Integrity.",
-    sections: [
-      { title: "Strategic Alliances", bullets: ["Banks/Financial Institutions", "Software Companies", "Point of Sale Companies", "Payment Gateways", "Agent/Reseller Programs"] },
-      { title: "Referral Partners", bullets: ["Associations", "Accountants", "Business to Business Companies", "Business Attorneys", "People who know a lot of business owners"] },
+    cta: "Start a Partnership Conversation",
+    image: "/images/integrity-payments/home/business-brainstorming.jpg",
+    imageAlt: "Partnership planning conversation",
+    showcaseTitle: "Partnerships Built on Trust and Follow-Through",
+    intro:
+      "Your referrals and customer relationships deserve careful handling. Resilient Payments works to protect your reputation while giving your clients access to useful business operating solutions.",
+    highlights: [
+      "Professional follow-up with your referred clients",
+      "Payment, payroll, lending, web, ATM, insurance, and messaging solutions",
+      "Programs for strategic alliances, referral partners, and sales organizations",
     ],
+    sections: [
+      {
+        title: "Strategic Alliances",
+        description: "A fit for organizations that already serve merchants and want to expand their customer value.",
+        bullets: ["Banks/Financial Institutions", "Software Companies", "Point of Sale Companies", "Payment Gateways", "Agent/Reseller Programs"],
+      },
+      {
+        title: "Referral Partners",
+        description: "A straightforward way to introduce business owners to helpful services without becoming the service provider yourself.",
+        bullets: ["Associations", "Accountants", "Business to Business Companies", "Business Attorneys", "People who know a lot of business owners"],
+      },
+    ],
+    formFields: ["Name", "Company", "Phone Number", "Email Address", "Partnership Type", "Tell us about your clients or network"],
   },
   "strategic-alliances": {
     title: "Strategic Alliances",
     description:
       "If you are a bank, financial institution, software company, point of sale company, gateway solution, or someone seeking an agent/reseller deal, you have come to the right place.",
     sections: [
-      { title: "We Will Take Care of Your Customers", description: "Aligning with Resilient Payments can offer your merchants best-in-class solutions, low rates, no hidden fees, excellent customer service, and a stronger relationship with your business." },
+      {
+        title: "We Will Take Care of Your Customers",
+        description: "Aligning with Resilient Payments can offer your merchants best-in-class solutions, low rates, no hidden fees, excellent customer service, and a stronger relationship with your business.",
+        bullets: ["Merchant-first consultation", "Transparent service discussions", "Support for payments, payroll, lending, insurance, and web needs"],
+      },
+      {
+        title: "Alliance Fit",
+        description: "Ideal for organizations that want a dependable service partner without building every solution internally.",
+        bullets: ["Financial institutions", "Software platforms", "Point of sale vendors", "Payment gateways", "Agent and reseller programs"],
+      },
     ],
     formFields: ["Name", "Company", "Phone Number", "Email Address", "Why I am a good fit for a partnership with Integrity"],
   },
@@ -471,7 +581,16 @@ export const pageContent = {
     description:
       "If you are an association, accounting firm, B2B company, legal firm, consultant, or simply know business owners, partnering with Resilient Payments may be one of the best decisions you make.",
     sections: [
-      { title: "White Glove Referral Support", description: "Resilient Payments will take care of your referral customers, build custom solutions for their specific needs, offer affordable costs, and provide White Glove Treatment." },
+      {
+        title: "White Glove Referral Support",
+        description: "Resilient Payments will take care of your referral customers, build custom solutions for their specific needs, offer affordable costs, and provide White Glove Treatment.",
+        bullets: ["Respectful client outreach", "Needs-based solution matching", "Ongoing support after the introduction"],
+      },
+      {
+        title: "Who Makes a Strong Referral Partner",
+        description: "If your work puts you near business owners, operators, or decision makers, a referral partnership can create value for everyone involved.",
+        bullets: ["Associations", "Accounting firms", "Consultants", "Legal firms", "Business service providers"],
+      },
     ],
     formFields: ["Name", "Company", "Phone Number", "Email Address", "Why I am a good fit for a partnership with Integrity"],
   },
@@ -480,19 +599,41 @@ export const pageContent = {
     description:
       "Seeking the final stop in your sales or sales management career? Resilient Payments offers lifetime residuals at some of the industry's highest payouts, with options for large upfront bonuses on your deals.",
     cta: "Learn More",
-    sections: [
-      { title: "Build Referral Sources and Networks", bullets: ["Your referral partner wins", "Your portfolio and income win", "Most importantly, your customers win"] },
-      { title: "Careers at Resilient Payments", description: "Because we think you are worth it. If you take care of your people, your people will take care of you." },
+    image: "/images/integrity-payments/home/online-payment.jpg",
+    imageAlt: "Sales professional discussing business service opportunities",
+    showcaseTitle: "A Sales Career Built Around Real Business Value",
+    intro:
+      "If you want to build a book of business around services owners actually need, Resilient Payments gives you a broad product set, consultative positioning, and long-term residual opportunity.",
+    highlights: [
+      "Payment, payroll, lending, insurance, web, ATM, and messaging solutions",
+      "Referral-source development and relationship-driven selling",
+      "Lifetime residual opportunities and strong payout potential",
     ],
+    sections: [
+      { title: "Build Referral Sources and Networks", description: "Create relationships with people and organizations that already know business owners.", bullets: ["Your referral partner wins", "Your portfolio and income win", "Most importantly, your customers win"] },
+      { title: "Careers at Resilient Payments", description: "Because we think you are worth it. If you take care of your people, your people will take care of you.", bullets: ["Consultative selling", "Multiple service categories", "Long-term account value"] },
+    ],
+    formFields: ["Name", "Phone Number", "Email Address", "Sales Experience", "Preferred Market", "Tell us why you are interested"],
   },
   "about-us": {
     title: "About Us",
     description:
       "Resilient Payments brings decades of experience to your doorstep. Founded by industry executives from Fortune 500 companies in payments, payroll, and insurance, our experience brings your business a wealth of knowledge.",
+    cta: "Talk With Our Team",
+    image: "/images/integrity-payments/home/business-brainstorming.jpg",
+    imageAlt: "Resilient Payments business consultation",
+    showcaseTitle: "Experience, Transparency, and the Golden Rule",
+    intro:
+      "Business owners deserve clear recommendations and service that feels human. Resilient Payments was built to combine industry knowledge with the kind of direct, respectful support owners should expect.",
+    highlights: [
+      "Decades of experience across payments, payroll, insurance, and business services",
+      "A practical one-stop approach for owners who want fewer vendor headaches",
+      "A company philosophy centered on honesty, transparency, and Integrity",
+    ],
     sections: [
-      { title: "Why This Matters", description: "We know the games competitors play to pad profits while customers unknowingly pay the price. We refuse to operate this way. Being honest is our greatest strategy and biggest advantage." },
-      { title: "The Golden Rule in Business", description: "Our company was founded on the philosophy of always practicing the Golden Rule in Business. This means treating customers, partners, and sales agents exactly the way we would expect to be treated." },
-      { title: "Welcome", description: "Resilient Payments always has your best interest at heart. We want to earn your business and your trust every single day." },
+      { title: "Why This Matters", description: "We know the games competitors play to pad profits while customers unknowingly pay the price. We refuse to operate this way. Being honest is our greatest strategy and biggest advantage.", bullets: ["Clear conversations", "No unnecessary complexity", "Recommendations based on fit"] },
+      { title: "The Golden Rule in Business", description: "Our company was founded on the philosophy of always practicing the Golden Rule in Business. This means treating customers, partners, and sales agents exactly the way we would expect to be treated.", bullets: ["Respectful service", "Transparent guidance", "Long-term relationships"] },
+      { title: "Welcome", description: "Resilient Payments always has your best interest at heart. We want to earn your business and your trust every single day.", bullets: ["Payments", "Payroll", "Lending", "Insurance", "Web and messaging tools"] },
     ],
   },
   testimonials: {
@@ -502,10 +643,318 @@ export const pageContent = {
   },
   contact: {
     title: "Contact Us",
-    description: "Please complete the form below and we will be in touch with you shortly.",
+    description:
+      "Share a few details about your business and the type of support you need. A Resilient Payments advisor can help with payments, POS, payroll, lending, insurance, web development, ATM machines, text tools, partnerships, or careers.",
     formFields: ["Name", "Email Address", "Phone Number", "Company", "How can we help?", "Message"],
   },
 };
+
+Object.assign(pageContent.payments, {
+  detailBlocks: [
+    {
+      kicker: "Payment Channels",
+      title: "Take Payments Wherever Customers Are",
+      image: "/images/integrity-payments/hero/accept-payments-anywhere.jpg",
+      description: "Support in-store, online, mobile, invoice, subscription, B2B/B2G, and text-to-pay workflows without forcing every customer into one checkout path.",
+      bullets: ["Card present and card not present", "Contactless and mobile acceptance", "Recurring, invoice, and text payment options"],
+    },
+    {
+      kicker: "Cost Control",
+      title: "Programs Built Around Your Margins",
+      image: "/images/integrity-payments/home/low-prices.png",
+      description: "We help review your current acceptance setup and discuss compliant cost-reduction programs that fit your business model.",
+      bullets: ["Dual pricing options", "Surcharge and discount-for-cash conversations", "Ecommerce cost-reduction review"],
+    },
+    {
+      kicker: "Support",
+      title: "Clear Reporting and Real Help",
+      image: "/images/integrity-payments/home/support.png",
+      description: "Payment tools work best when reporting is understandable and support is reachable. Resilient Payments focuses on both.",
+      bullets: ["Assigned advisor support", "Transparent fee conversations", "Premium and Tier 2 support options"],
+    },
+  ],
+  faqs: [
+    { question: "Can you support both retail and online payments?", answer: "Yes. Resilient Payments can help with terminals, POS, eCommerce, invoicing, recurring billing, mobile payments, and text-to-pay." },
+    { question: "Do you work with specialty or high-risk merchants?", answer: "We may be able to help specialty account types by reviewing the business model and matching it with suitable processing options." },
+  ],
+});
+
+Object.assign(pageContent["pos-systems"], {
+  detailBlocks: [
+    {
+      kicker: "Checkout",
+      title: "POS Tools for Faster Daily Sales",
+      image: "/images/integrity-payments/smartphone-payment.jpg",
+      description: "Choose checkout tools that match the way your staff works: countertop, mobile, contactless, kiosk, restaurant, retail, or service-based workflows.",
+      bullets: ["Retail and restaurant options", "Mobile and countertop acceptance", "Self-service kiosk possibilities"],
+    },
+    {
+      kicker: "Operations",
+      title: "Connect Payments With Your Workflow",
+      image: "/images/integrity-payments/home/online-payment.jpg",
+      description: "A useful POS system should help organize transactions, reporting, customer convenience, and integrations rather than only taking a card.",
+      bullets: ["QuickBooks payment integration", "Invoicing and reporting", "Contactless, Apple Pay, Tap to Pay, and NFC"],
+    },
+    {
+      kicker: "Growth",
+      title: "Add Tools as Your Business Changes",
+      image: "/images/integrity-payments/home/shopping-cart.png",
+      description: "As your business grows, your checkout can expand into online payments, mobile terminals, kiosks, or integrated service tools.",
+      bullets: ["Add locations or terminals", "Support online and in-person sales", "Build around your customer experience"],
+    },
+  ],
+  faqs: [
+    { question: "Can a POS system work with online payments?", answer: "Depending on the platform, Resilient Payments can help connect POS needs with online checkout, invoicing, or eCommerce payment tools." },
+    { question: "Do you help choose hardware?", answer: "Yes. The goal is to match terminals, mobile tools, or POS hardware to your actual checkout environment." },
+  ],
+});
+
+Object.assign(pageContent.payroll, {
+  detailBlocks: [
+    {
+      kicker: "Payroll",
+      title: "Pay Teams Accurately and On Time",
+      image: "/images/integrity-payments/hero/payroll-hr.jpg",
+      description: "Payroll support should reduce manual work and give owners confidence that employees, taxes, and reporting are handled with care.",
+      bullets: ["Traditional and internet payroll", "Dedicated U.S.-based representative", "Payroll tax service support"],
+    },
+    {
+      kicker: "HR",
+      title: "Human Resources Help When You Need It",
+      image: "/images/integrity-payments/home/business-brainstorming.jpg",
+      description: "Get practical HR resources for common employer needs such as onboarding, compliance, performance management, benefits, and termination questions.",
+      bullets: ["Hiring and onboarding support", "Compliance and documentation help", "Benefits and compensation conversations"],
+    },
+    {
+      kicker: "Benefits",
+      title: "Connect Payroll With Employee Value",
+      image: "/images/integrity-payments/business-brainstorming.jpg",
+      description: "Payroll conversations can also include workers comp, employee benefits, time and attendance, and retirement plan options.",
+      bullets: ["Time and attendance", "Workers comp payment services", "401(k), 403(b), Safe Harbor, and profit sharing"],
+    },
+  ],
+  faqs: [
+    { question: "Can payroll include HR support?", answer: "Yes. Payroll conversations can include HR assistance, payroll tax services, time and attendance, workers comp, and benefits." },
+    { question: "Can you help if we already have payroll?", answer: "Yes. Resilient Payments can review your current process and discuss whether another payroll or HR setup would reduce workload." },
+  ],
+});
+
+Object.assign(pageContent["401-k"], {
+  detailBlocks: [
+    {
+      kicker: "Plan Options",
+      title: "Retirement Support That Fits Your Team",
+      image: "/images/integrity-payments/hero/payroll-hr.jpg",
+      description: "Explore retirement plan conversations that make sense for your company size, benefit goals, and employee expectations.",
+      bullets: ["Traditional 401(k)", "Roth 401(k)", "Safe Harbor plans"],
+    },
+    {
+      kicker: "Retention",
+      title: "Use Benefits to Strengthen Hiring",
+      image: "/images/integrity-payments/home/business-brainstorming.jpg",
+      description: "A thoughtful retirement plan can help employees see a future with your company and improve the strength of your compensation package.",
+      bullets: ["Employee retention support", "Compensation package value", "Profit-sharing plan options"],
+    },
+  ],
+  faqs: [
+    { question: "Can retirement plan support connect with payroll?", answer: "Yes. Retirement and benefit conversations often work best when coordinated with payroll and employee data workflows." },
+    { question: "Do you only discuss one type of plan?", answer: "No. The conversation can include traditional, Roth, Safe Harbor, and profit-sharing plan options." },
+  ],
+});
+
+Object.assign(pageContent.lending, {
+  detailBlocks: [
+    {
+      kicker: "Working Capital",
+      title: "Funding for Cash Flow and Growth",
+      image: "/images/integrity-payments/hero/business-lending.jpg",
+      description: "Business funding can support inventory, staffing, equipment, marketing, refinancing, expansion, or everyday operating needs.",
+      bullets: ["Working capital", "Business lines of credit", "Short-term funding options"],
+    },
+    {
+      kicker: "Expansion",
+      title: "Support Bigger Business Moves",
+      image: "/images/integrity-payments/home/business-brainstorming.jpg",
+      description: "When a business is ready to buy equipment, expand locations, refinance debt, or buy property, the right lending conversation matters.",
+      bullets: ["SBA loan conversations", "Equipment financing", "Commercial real estate or rental financing"],
+    },
+    {
+      kicker: "Receivables",
+      title: "Unlock Money Tied Up in Work",
+      image: "/images/integrity-payments/home/online-payment.jpg",
+      description: "Contract financing and receivables support may help businesses close deals, pay suppliers, or get paid faster.",
+      bullets: ["Contract financing", "Accounts receivable support", "Supplier funding conversations"],
+    },
+  ],
+  faqs: [
+    { question: "What can business funding be used for?", answer: "Funding may support working capital, equipment, inventory, refinancing, expansion, marketing, or other business operating needs." },
+    { question: "Do you compare different funding routes?", answer: "Yes. The goal is to discuss practical options such as SBA loans, lines of credit, equipment financing, and working capital." },
+  ],
+});
+
+Object.assign(pageContent.champ, {
+  detailBlocks: [
+    {
+      kicker: "Retention",
+      title: "Employee Value Without Extra Complexity",
+      image: "/images/integrity-payments/business-brainstorming.jpg",
+      description: "The CHAMP Plan is designed for employers who want to improve retention and employee value while keeping the conversation practical.",
+      bullets: ["Employee retention tools", "Basic healthcare and prescription benefit possibilities", "Designed for W2 employee teams"],
+    },
+    {
+      kicker: "Employer Impact",
+      title: "Support Employees and the Business",
+      image: "/images/integrity-payments/home/support.png",
+      description: "The plan can help employers strengthen benefits, support take-home pay, and create useful business value when structured properly.",
+      bullets: ["Retention support", "Potential take-home pay improvement", "Potential employer-side value"],
+    },
+  ],
+  faqs: [
+    { question: "Who is The CHAMP Plan for?", answer: "It is designed for employers with W2 employees who want to improve retention and employee benefit value." },
+    { question: "Does it replace existing benefits?", answer: "The plan may enhance current benefits without interfering with existing benefit structures, depending on the situation." },
+  ],
+});
+
+Object.assign(pageContent["text-message-tools"], {
+  detailBlocks: [
+    {
+      kicker: "Billing",
+      title: "Make Invoices Easier to Pay",
+      image: "/images/integrity-payments/hero/text-message-tools.jpg",
+      description: "Text-to-pay and text invoicing help customers receive a secure link and complete payment from the device they already use every day.",
+      bullets: ["Text-to-pay links", "Text message invoicing", "Recurring and subscription conversations"],
+    },
+    {
+      kicker: "Communication",
+      title: "Two-Way Messaging for Faster Answers",
+      image: "/images/integrity-payments/home/payment-smartphone.jpg",
+      description: "Text tools can help staff answer customer questions, clarify bills, send updates, and reduce avoidable phone tag.",
+      bullets: ["Two-way text messaging", "Customer reminders", "Payment and support communication"],
+    },
+    {
+      kicker: "Giving",
+      title: "Donation and Text-to-Give Tools",
+      image: "/images/integrity-payments/home/online-payment.jpg",
+      description: "Nonprofits and religious organizations can use QR codes, keywords, and text prompts to make giving easier.",
+      bullets: ["Text to give", "Text to donate", "QR code payment prompts"],
+    },
+  ],
+  faqs: [
+    { question: "Can customers pay from a text message?", answer: "Yes. A text-to-pay workflow can send customers a secure link to review and pay an invoice." },
+    { question: "Can this help nonprofits?", answer: "Yes. Text-to-give and text-to-donate options can simplify donor response through keywords or QR codes." },
+  ],
+});
+
+Object.assign(pageContent["web-development"], {
+  detailBlocks: [
+    {
+      kicker: "Website Packages",
+      title: "From Starter Sites to eCommerce",
+      image: "/images/integrity-payments/hero/website-development.jpg",
+      description: "Build or rebuild a website that helps customers understand your business, take action, and buy online when needed.",
+      bullets: ["Starter informational websites", "Standard eCommerce websites", "Professional POS and store connectivity"],
+    },
+    {
+      kicker: "Conversion",
+      title: "A Cleaner Path for Customers",
+      image: "/images/integrity-payments/home/online-payment.jpg",
+      description: "Your site should make services clear, support trust, and guide customers toward contact, checkout, booking, or inquiry.",
+      bullets: ["Shopping carts", "Live chat possibilities", "Content updates and support"],
+    },
+    {
+      kicker: "Growth",
+      title: "Digital Marketing and SEO Support",
+      image: "/images/integrity-payments/home/business-brainstorming.jpg",
+      description: "A website should be part of a wider growth system that includes visibility, messaging, hosting, and useful customer follow-up.",
+      bullets: ["SEO and digital marketing", "Hosting conversations", "Newsletters and customer updates"],
+    },
+  ],
+  faqs: [
+    { question: "Can you help with eCommerce?", answer: "Yes. Resilient Payments can help discuss shopping cart and eCommerce website options." },
+    { question: "Can existing websites be improved?", answer: "Yes. Website redevelopment, content updates, hosting, SEO, live chat, and digital marketing can all be part of the conversation." },
+  ],
+});
+
+Object.assign(pageContent.atm, {
+  detailBlocks: [
+    {
+      kicker: "Equipment",
+      title: "ATM Machines for Busy Locations",
+      image: "/images/integrity-payments/hero/atm-machines.png",
+      description: "ATM solutions can improve customer convenience, support cash access, and create a useful onsite service for retail or service locations.",
+      bullets: ["ATM sales and service", "Wholesale equipment pricing", "EMV-compliant equipment"],
+    },
+    {
+      kicker: "Monitoring",
+      title: "Reporting and Remote Oversight",
+      image: "/images/integrity-payments/home/online-payment.jpg",
+      description: "Reliable ATM programs need visibility. Reporting, monitoring, eJournal access, and settlement options help owners stay informed.",
+      bullets: ["Realtime reporting", "Remote ATM monitoring", "Customized settlement options"],
+    },
+    {
+      kicker: "Branding",
+      title: "Make the ATM Fit Your Location",
+      image: "/images/integrity-payments/home/business-brainstorming.jpg",
+      description: "ATM wraps, toppers, and advertising tools can help the machine feel integrated into your business rather than an afterthought.",
+      bullets: ["Branding solutions", "ATM wraps and toppers", "Advertising tools"],
+    },
+  ],
+  faqs: [
+    { question: "Can you support both merchants and ATM operators?", answer: "Yes. ATM solutions can be discussed for merchants, operators, and processor relationships." },
+    { question: "Is reporting included in the conversation?", answer: "Yes. Reporting, monitoring, eJournal access, and settlement options are part of the ATM support discussion." },
+  ],
+});
+
+Object.assign(pageContent["business-insurance"], {
+  detailBlocks: [
+    {
+      kicker: "Coverage",
+      title: "Protection for Business Risks",
+      image: "/images/integrity-payments/hero/business-insurance.jpg",
+      description: "Business insurance support can help owners think through liability, property, cyber, auto, workers comp, professional, and interruption risks.",
+      bullets: ["General liability", "Commercial property", "Cyber and professional coverage"],
+    },
+    {
+      kicker: "Employees",
+      title: "Coverage Connected to Your Team",
+      image: "/images/integrity-payments/home/support.png",
+      description: "Insurance conversations may also include workers comp, group health, employee benefits, and business owner policy needs.",
+      bullets: ["Workers comp", "Group health", "Employee benefits"],
+    },
+    {
+      kicker: "Request",
+      title: "A Simpler Insurance Conversation",
+      image: "/images/integrity-payments/home/business-brainstorming.jpg",
+      description: "Share your business type and coverage needs so the right insurance expert can follow up with a more focused conversation.",
+      bullets: ["Coverage request routing", "Business-type review", "Advisor follow-up"],
+    },
+  ],
+  faqs: [
+    { question: "What types of insurance can be discussed?", answer: "Workers comp, liability, property, commercial auto, professional, cyber, group health, business interruption, and other business coverage needs." },
+    { question: "Can I request a specific insurance type?", answer: "Yes. The insurance request form includes a field for the coverage type you want to discuss." },
+  ],
+});
+
+Object.assign(pageContent["partner-with-us"], {
+  faqs: [
+    { question: "What makes a good partner?", answer: "A strong partner already serves business owners and wants to introduce useful services without damaging client trust." },
+    { question: "Will Resilient Payments handle referred clients carefully?", answer: "Yes. The partnership approach is built around professionalism, clear communication, and protecting your relationship." },
+  ],
+});
+
+Object.assign(pageContent.careers, {
+  faqs: [
+    { question: "What kind of sales background fits?", answer: "Relationship-driven sales experience, referral-source building, merchant services, payroll, insurance, lending, or B2B consulting can all be relevant." },
+    { question: "What makes the opportunity different?", answer: "You can discuss multiple services with business owners instead of relying on only one product category." },
+  ],
+});
+
+Object.assign(pageContent["about-us"], {
+  faqs: [
+    { question: "What does the Golden Rule in Business mean?", answer: "It means treating merchants, partners, employees, and sales agents the way we would expect to be treated: clearly, honestly, and respectfully." },
+    { question: "Why offer multiple services?", answer: "Business owners often need several connected operating tools. A one-stop conversation can reduce vendor confusion and help owners make better decisions." },
+  ],
+});
 
 export const footerLinks = [
   { label: "Home", href: "/" },

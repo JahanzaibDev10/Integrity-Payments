@@ -127,7 +127,7 @@ function FooterOne() {
                                         </a>
                                     </p>
                                     <div className="integrity-copyright-text">
-                                        <p>{site.legalName} - Copyright 2025. All rights reserved.</p>
+                                        <p>{site.legalName} - Copyright 2026. All rights reserved.</p>
                                         <p>{site.partnerDisclosure}</p>
                                     </div>
                                 </div>

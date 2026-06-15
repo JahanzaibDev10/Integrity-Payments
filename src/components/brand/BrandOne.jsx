@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { site } from '@/data/siteContent'
+import { site, home } from '@/data/siteContent'
 
 function BrandOne() {
     return (
@@ -15,26 +15,13 @@ function BrandOne() {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row g-4">
                         <div className="client-wrapper-one">
-                            <a href="#">
-                                <img src="assets/images/client/01.png" alt="" />
-                            </a>
-                            <a href="#">
-                                <img src="assets/images/client/02.png" alt="" />
-                            </a>
-                            <a href="#">
-                                <img src="assets/images/client/03.png" alt="" />
-                            </a>
-                            <a href="#">
-                                <img src="assets/images/client/04.png" alt="" />
-                            </a>
-                            <a href="#">
-                                <img src="assets/images/client/05.png" alt="" />
-                            </a>
-                            <a href="#">
-                                <img src="assets/images/client/06.png" alt="" />
-                            </a>
+                            {home.otherNeeds.map((need) => (
+                                <a href="/products" key={need} aria-label={need}>
+                                    <span>{need}</span>
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </div>

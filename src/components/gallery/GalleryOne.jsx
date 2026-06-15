@@ -8,16 +8,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
 import ErrorBoundary from "@/components/ErrorBoundary";
-import { products } from '@/data/siteContent';
-
-const images = [
-    "assets/images/gallery/gallery-01.jpg",
-    "assets/images/gallery/gallery-02.jpg",
-    "assets/images/gallery/gallery-03.jpg",
-];
+import { home } from '@/data/siteContent';
 
 function GalleryOne() {
-    const featured = [products[0], products[1], products[3]];
+    const featured = home.featuredSolutions;
 
     return (
         <ErrorBoundary>
@@ -26,8 +20,8 @@ function GalleryOne() {
                     <div className="container">
                         <div className="row">
                             <div className="rts-title-area gallery text-start pl_sm--20">
-                                <p className="pre-title">Featured Solutions</p>
-                                <h2 className="title">Built For Everyday Business Operations</h2>
+                                <p className="pre-title">Popular Projects</p>
+                                <h2 className="title">Our Completed Projects</h2>
                             </div>
                         </div>
                         <div className="row mt--45">
@@ -48,7 +42,7 @@ function GalleryOne() {
                                                 <div className="row g-5 w-g-100">
                                                     <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                                                         <div className="thumbnail-gallery">
-                                                            <img src={images[index]} alt="" />
+                                                            <img src={item.image} alt={item.title} />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-5 col-md-12 col-sm-12 col-12">
@@ -59,8 +53,8 @@ function GalleryOne() {
                                                             <Link href={item.href}>
                                                                 <h4 className="title">{item.title}</h4>
                                                             </Link>
-                                                            <span>{item.bullets.slice(0, 2).join(", ")}</span>
-                                                            <p className="disc">{item.summary}</p>
+                                                            <span>{item.category}</span>
+                                                            <p className="disc">{item.description}</p>
                                                             <Link className="rts-btn btn-primary" href={item.href}>
                                                                 Learn More
                                                             </Link>

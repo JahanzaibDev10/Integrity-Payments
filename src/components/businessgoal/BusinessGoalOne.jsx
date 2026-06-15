@@ -13,15 +13,16 @@ function BusinessGoalOne() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="business-goal-one">
-                                    <img src="assets/images/business-goal/01.jpg" alt="" />
-                                    <img className="small" src="assets/images/business-goal/sm-01.jpg" alt="" />
+                                    <img src="/images/integrity-payments/home/online-payment.jpg" alt="Online payment tools for businesses" />
+                                    <img className="small" src="/images/integrity-payments/home/shopping-cart.png" alt="One stop shop for business services" />
                                 </div>
                             </div>
                             <div className="col-lg-6 mt--35 mt_md--70 mt_sm--70">
                                 <div className="business-goal-right">
                                     <div className="rts-title-area business text-start pl--30">
-                                        <p className="pre-title">A One Stop Shop</p>
-                                        <h2 className="title">Payments, payroll, funding, web, and business support</h2>
+                                        <p className="pre-title">Just A Consultancy</p>
+                                        <h2 className="title">{home.operationsTitle}</h2>
+                                        <p className="disc mt--20">{home.operationsDescription}</p>
                                     </div>
                                     <div className="rts-business-goal pl--30">
                                         <div className="single-goal">
@@ -45,7 +46,7 @@ function BusinessGoalOne() {
                                             <div className="vedio-icone">
                                                 <Link id="play-video" className="video-play-button" href={site.phoneHref}>
                                                     <span />
-                                                    <span className="outer-text">{site.phone}</span>
+                                                    <span className="outer-text">Watch Video</span>
                                                 </Link>
                                             </div>
                                         </div>

@@ -50,8 +50,8 @@ function AboutOne() {
                                         <div className="author-inner">
                                             <a className="thumbnail" href="#">
                                                 <img
-                                                    src="assets/images/about/sm-01.png"
-                                                    alt=""
+                                                    src="/images/integrity-payments/logo.png"
+                                                    alt={`${site.name} logo`}
                                                 />
                                             </a>
                                             <div className="founder-details">
@@ -89,13 +89,13 @@ function AboutOne() {
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-md-1 order-sm-1 order-1">
                             <div className="about-one-thumbnail">
                                 <img
-                                    src=" assets/images/about/main/about-01.png"
-                                    alt=""
+                                    src="/images/integrity-payments/home/business-brainstorming.jpg"
+                                    alt="Business consultants reviewing operating solutions"
                                 />
                                 <img
                                     className="small-img"
-                                    src="assets/images/about/main/about-02.png"
-                                    alt=""
+                                    src="/images/integrity-payments/home/payment-smartphone.jpg"
+                                    alt="Secure mobile payment acceptance"
                                 />
                                 <div className="experience">
                                     <div className="left single">

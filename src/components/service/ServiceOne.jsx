@@ -13,7 +13,7 @@ function ServiceOne() {
                             <div className="col-12">
                                 <div className="rts-title-area service text-center">
                                     <p className="pre-title">Our Services</p>
-                                    <h2 className="title">Business Operating Solutions</h2>
+                                    <h2 className="title">High Quality Services</h2>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ function ServiceOne() {
                                     </div>
                                     <div className="cta-right">
                                         <Link className="rts-btn btn-white" href="/contact">
-                                            Request a Free Consultation
+                                            Lets Work Together
                                         </Link>
                                     </div>
                                 </div>

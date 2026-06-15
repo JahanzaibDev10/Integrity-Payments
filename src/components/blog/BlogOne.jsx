@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import BlogOneMain from './BlogOneMain';
 import ErrorBoundary from "@/components/ErrorBoundary";
-import { products } from '@/data/siteContent';
+import { home } from '@/data/siteContent';
 function BlogOne() {
     return (
         <ErrorBoundary>
@@ -21,8 +21,8 @@ function BlogOne() {
                         <div className="row">
                             <div className="col-12">
                                 <div className="title-area text-center">
-                                    <span>Products</span>
-                                    <h2 className="title">More Resilient Payments Solutions</h2>
+                                    <span>Blog Posts</span>
+                                    <h2 className="title">News & Updates</h2>
                                 </div>
                             </div>
                         </div>
@@ -58,16 +58,16 @@ function BlogOne() {
 
                                 >
 
-                                    {products.slice(5).map((data, index) => {
+                                    {home.insights.map((data, index) => {
                                         return (
                                             <SwiperSlide key={index}>
                                                 {
                                                         <BlogOneMain
                                                         blogID={data.href}
-                                                        blogImage={data.image || `${index + 7 < 10 ? '0' : ''}${index + 7}.jpg`}
-                                                        blogPublishedDate={data.title}
-                                                        blogCategory="Resilient Payments"
-                                                        blogTitle={data.summary}
+                                                        blogImage={data.image}
+                                                        blogPublishedDate={data.label}
+                                                        blogCategory="Resilient Payments Insight"
+                                                        blogTitle={data.title}
                                                         href={data.href}
                                                     />
                                                 }

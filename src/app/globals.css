@@ -44,3 +44,204 @@ a {
 nextjs-portal {
   display: none !important;
 }
+
+.about-one-thumbnail > img:first-child {
+  width: min(82%, 520px);
+  height: 560px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.about-one-thumbnail .small-img {
+  width: 255px;
+  height: 255px;
+  object-fit: cover;
+  object-position: center;
+  border: 10px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(28, 37, 57, 0.14);
+}
+
+.business-goal-one > img:first-child,
+.feature-left-area img,
+.thumbnail-gallery img,
+.contact-image-one img {
+  object-fit: cover;
+}
+
+.client-wrapper-one a {
+  min-height: 86px;
+  padding: 18px 20px;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.client-wrapper-one a span {
+  color: #1c2539;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.integrity-map-card {
+  min-height: 450px;
+  padding: 44px;
+  background: #1c2539;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(240px, 1fr);
+  gap: 34px;
+  align-items: center;
+}
+
+.integrity-map-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.integrity-map-card h5 {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.integrity-map-card p {
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 24px;
+}
+
+.integrity-contact-map {
+  min-height: 440px;
+  background:
+    linear-gradient(90deg, rgba(28, 37, 57, 0.94), rgba(28, 37, 57, 0.72)),
+    url("/images/integrity-payments/home/online-payment.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+}
+
+.integrity-contact-map-panel {
+  width: min(620px, 100%);
+  padding: 42px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 8px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.integrity-contact-map-panel .pre-title {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.integrity-contact-map-panel h3 {
+  color: #1c2539;
+  font-size: 36px;
+  line-height: 1.22;
+  margin-bottom: 16px;
+}
+
+.integrity-contact-map-panel p {
+  color: #5d6577;
+  margin-bottom: 24px;
+}
+
+.integrity-service-copy .title,
+.integrity-page-title .title {
+  letter-spacing: 0;
+}
+
+.integrity-service-highlights li,
+.integrity-template-list li {
+  line-height: 1.55;
+}
+
+.integrity-template-card .service-details .disc {
+  margin-bottom: 16px;
+}
+
+.integrity-detail-block,
+.integrity-faq-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(28, 37, 57, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(28, 37, 57, 0.08);
+}
+
+.integrity-detail-image img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.integrity-detail-copy {
+  padding: 28px;
+}
+
+.integrity-detail-copy span {
+  color: var(--color-primary);
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.integrity-detail-copy h5,
+.integrity-faq-card h5 {
+  color: #1c2539;
+  font-size: 22px;
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.integrity-detail-copy p,
+.integrity-faq-card p {
+  color: #5d6577;
+  line-height: 1.65;
+}
+
+.integrity-faq-card {
+  padding: 28px;
+}
+
+@media (max-width: 767px) {
+  .about-one-thumbnail > img:first-child {
+    width: 100%;
+    height: 420px;
+  }
+
+  .about-one-thumbnail .small-img {
+    width: 185px;
+    height: 185px;
+  }
+
+  .integrity-map-card {
+    min-height: auto;
+    padding: 28px;
+    grid-template-columns: 1fr;
+  }
+
+  .integrity-contact-map {
+    min-height: auto;
+    padding: 42px 18px;
+  }
+
+  .integrity-contact-map-panel {
+    padding: 28px;
+  }
+
+  .integrity-contact-map-panel h3 {
+    font-size: 28px;
+  }
+}
