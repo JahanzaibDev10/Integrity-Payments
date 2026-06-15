@@ -2,7 +2,7 @@ import IntegrityPage from "@/components/integrity/IntegrityPage";
 
 export const metadata = {
   title: "ATM Machines",
-  description: "ATM processing, equipment, reporting, remote monitoring, and support from Integrity Payments.",
+  description: "ATM processing, equipment, reporting, remote monitoring, and support from Resilient Payments.",
 };
 
 export default function Page() {

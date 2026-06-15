@@ -3,7 +3,7 @@ import IntegrityPage from "@/components/integrity/IntegrityPage";
 export const metadata = {
   title: "About Us",
   description:
-    "Integrity Payments brings decades of payments, payroll, insurance, lending, and business service experience to business owners.",
+    "Resilient Payments brings decades of payments, payroll, insurance, lending, and business service experience to business owners.",
 };
 
 export default function Page() {

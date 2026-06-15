@@ -2,7 +2,7 @@ import IntegrityPage from "@/components/integrity/IntegrityPage";
 
 export const metadata = {
   title: "Contact",
-  description: "Contact Integrity Payments by phone, email, or contact form.",
+  description: "Contact Resilient Payments by phone, email, or contact form.",
 };
 
 export default function Page() {

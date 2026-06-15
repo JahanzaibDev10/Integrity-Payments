@@ -9,9 +9,9 @@ import "../../public/assets/css/style.css";
 
 
 export const metadata = {
-  title: "Integrity Payments",
+  title: "Resilient Payments",
   description:
-    "Integrity Payments helps businesses with payments, payroll, lending, web development, ATM machines, business insurance, and partner programs.",
+    "Resilient Payments helps businesses with payments, payroll, lending, web development, ATM machines, business insurance, and partner programs.",
   icons: {
     icon: "/images/integrity-payments/integrity-favicon.png",
   },

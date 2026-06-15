@@ -1,18 +1,18 @@
 export const site = {
-  name: "Integrity Payments",
-  legalName: "Integrity Payments, Inc.",
+  name: "Resilient Payments",
+  legalName: "Resilient Payments, Inc.",
   phone: "877-639-1000",
   phoneHref: "tel:+18776391000",
-  email: "info@integritypayments.com",
-  emailHref: "mailto:info@integritypayments.com",
+  email: "info@resilientpayments.com",
+  emailHref: "mailto:info@resilientpayments.com",
   logo: "/images/integrity-payments/logo.png",
   footerLogo: "/images/integrity-payments/footer/logo-white.png",
   favicon: "/images/integrity-payments/integrity-favicon.png",
   etaLogo: "/images/integrity-payments/footer/eta-logo.png",
   description:
-    "Integrity Payments, Inc. is a team of national business consultants connecting our clients to numerous & beneficial different partners and products",
+    "Resilient Payments, Inc. is a team of national business consultants connecting our clients to numerous & beneficial different partners and products",
   disclosure:
-    "Integrity Payments, Inc. is an official Sales Agency & Partner of EPSG, LLC, a registered ISO/MSP of Wells Fargo Bank & Merrick Bank.",
+    "Resilient Payments, Inc. is an official Sales Agency & Partner of EPSG, LLC, a registered ISO/MSP of Wells Fargo Bank & Merrick Bank.",
   footerBenefits: [
     "Decades of Experience",
     "Solid, Reliable Solutions",
@@ -116,7 +116,7 @@ export const heroSlides = [
 export const intro = {
   title: "We Make Operating Your Business Easier",
   paragraphs: [
-    "Our mission at Integrity Payments is to provide our customers with the best personalized service in the industry. To treat you the exact same way we would expect to be treated ourselves. You're so much more than \"just a number\" with Integrity.",
+    "Our mission at Resilient Payments is to provide our customers with the best personalized service in the industry. To treat you the exact same way we would expect to be treated ourselves. You're so much more than \"just a number\" with Integrity.",
     "We will tailor fit a best in class, low cost solution for our merchants, and we'll do it with honesty, transparency, and Integrity.",
     "Thank you for your visit. We are excited to partner with you in shaping a more solid financial future for your business.",
   ],
@@ -139,7 +139,7 @@ export const featureCards = [
   {
     title: "Integrity",
     description:
-      "At Integrity Payments, we do everything with the utmost Integrity. We practice the Golden Rule, it's the only way we know.",
+      "At Resilient Payments, we do everything with the utmost Integrity. We practice the Golden Rule, it's the only way we know.",
     image: "/images/integrity-payments/home/support.png",
   },
 ];
@@ -169,25 +169,25 @@ export const businessNeeds = [
 export const testimonials = [
   {
     quote:
-      "Our Integrity Payments agent, James Reville, has been an integral part of the success of my business. He built a custom package that perfectly aligned with my operations, allowing me to focus on growth without worrying about backend details.",
+      "Our Resilient Payments agent, James Reville, has been an integral part of the success of my business. He built a custom package that perfectly aligned with my operations, allowing me to focus on growth without worrying about backend details.",
     name: "Matthew Abrantes",
     company: "Patriotic Distributors",
   },
   {
     quote:
-      "Thanks to Theresa Hairston for making the switch over to Integrity Payments very easy and effective for our business. The terminals she suggested have been problem free for our staff, and Integrity Payments was able to work out a much lower discount rate.",
+      "Thanks to Theresa Hairston for making the switch over to Resilient Payments very easy and effective for our business. The terminals she suggested have been problem free for our staff, and Resilient Payments was able to work out a much lower discount rate.",
     name: "John Wisdom",
     company: "Quitman Health Services",
   },
   {
     quote:
-      "We recently began working with Integrity Payments for our Payroll system. This has been the easiest system I have worked with. The platform is easy to navigate and the reporting is phenomenal!",
+      "We recently began working with Resilient Payments for our Payroll system. This has been the easiest system I have worked with. The platform is easy to navigate and the reporting is phenomenal!",
     name: "Shawn Lewis",
     company: "Christ's Church Kids",
   },
   {
     quote:
-      "Integrity Payments has been such a great company to work with. The customer service is top notch, and everyone at Integrity Payments has been completely professional and seem to be experts in their field.",
+      "Resilient Payments has been such a great company to work with. The customer service is top notch, and everyone at Resilient Payments has been completely professional and seem to be experts in their field.",
     name: "Daniel Yaniv",
     company: "Lavelier",
   },
@@ -253,7 +253,7 @@ export const pageContent = {
   "partner-with-us": {
     title: "Partner With Us",
     description:
-      "Integrity Payments believes in true win/win partnerships with professional service for your clients and your organization.",
+      "Resilient Payments believes in true win/win partnerships with professional service for your clients and your organization.",
   },
   "strategic-alliances": {
     title: "Strategic Alliances",
@@ -273,17 +273,17 @@ export const pageContent = {
   "about-us": {
     title: "About Us",
     description:
-      "Integrity Payments brings decades of experience in payments, payroll, insurance, lending, and business services to your doorstep.",
+      "Resilient Payments brings decades of experience in payments, payroll, insurance, lending, and business services to your doorstep.",
   },
   testimonials: {
     title: "Testimonials",
     description:
-      "Hear from business owners using Integrity Payments for processing, payroll, funding, and other critical services.",
+      "Hear from business owners using Resilient Payments for processing, payroll, funding, and other critical services.",
     testimonials,
   },
   contact: {
     title: "Contact",
     description:
-      "Connect with Integrity Payments to learn which business operating solutions fit your needs.",
+      "Connect with Resilient Payments to learn which business operating solutions fit your needs.",
   },
 };

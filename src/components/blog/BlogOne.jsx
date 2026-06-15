@@ -22,7 +22,7 @@ function BlogOne() {
                             <div className="col-12">
                                 <div className="title-area text-center">
                                     <span>Products</span>
-                                    <h2 className="title">More Integrity Payments Solutions</h2>
+                                    <h2 className="title">More Resilient Payments Solutions</h2>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ function BlogOne() {
                                                         blogID={data.href}
                                                         blogImage={data.image || `${index + 7 < 10 ? '0' : ''}${index + 7}.jpg`}
                                                         blogPublishedDate={data.title}
-                                                        blogCategory="Integrity Payments"
+                                                        blogCategory="Resilient Payments"
                                                         blogTitle={data.summary}
                                                         href={data.href}
                                                     />

@@ -3,7 +3,7 @@ import { featureCards } from "@/data/integrityPayments";
 
 export default function FeatureCards() {
   return (
-    <section className="integrity-feature-band" aria-label="Integrity Payments advantages">
+    <section className="integrity-feature-band" aria-label="Resilient Payments advantages">
       <div className="integrity-container integrity-feature-grid">
         {featureCards.map((feature) => (
           <article className="integrity-feature-card" key={feature.title}>

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="integrity-footer">
       <div className="integrity-container integrity-footer-main">
         <div className="integrity-footer-brand">
-          <Image src={site.footerLogo} alt="Integrity Payments" width={543} height={181} sizes="(max-width: 700px) 240px, 320px" />
+          <Image src={site.footerLogo} alt="Resilient Payments" width={543} height={181} sizes="(max-width: 700px) 240px, 320px" />
           <ul>
             {site.footerBenefits.map((benefit) => (
               <li key={benefit}>- {benefit}</li>
@@ -35,14 +35,14 @@ export default function Footer() {
             <br />
             {site.disclosure}
             <br />
-            © 2025 Integrity Payments, Inc. All rights reserved.
+            © 2025 Resilient Payments, Inc. All rights reserved.
           </em>
         </p>
       </div>
       <div className="integrity-footer-eta">
         <div className="integrity-container">
           <p>
-            <em>Integrity Payments is a proud member of the Electronic Transactions Association.</em>
+            <em>Resilient Payments is a proud member of the Electronic Transactions Association.</em>
           </p>
           <Image src={site.etaLogo} alt="Electronic Transactions Association logo" width={650} height={297} sizes="(max-width: 700px) 220px, 260px" />
         </div>

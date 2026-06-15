@@ -1,19 +1,19 @@
 export const site = {
-  name: "Integrity Payments",
-  legalName: "Integrity Payments, Inc.",
-  url: "https://integritypayments.com",
+  name: "Resilient Payments",
+  legalName: "Resilient Payments, Inc.",
+  url: "https://resilientpayments.com",
   phone: "877-639-1000",
   phoneHref: "tel:+18776391000",
-  email: "info@integritypayments.com",
-  emailHref: "mailto:info@integritypayments.com",
-  logo: "/images/integrity-payments/integrity-logo-grey.jpg",
+  email: "info@resilientpayments.com",
+  emailHref: "mailto:info@resilientpayments.com",
+  logo: "/images/integrity-payments/logo.png",
   footerLogo: "/images/integrity-payments/integrity-logo-white.png",
   favicon: "/images/integrity-payments/integrity-favicon.png",
   etaLogo: "/images/integrity-payments/eta-logo.png",
   description:
-    "Integrity Payments, Inc. is a team of national business consultants connecting our clients to numerous and beneficial partners and products.",
+    "Resilient Payments, Inc. is a team of national business consultants connecting our clients to numerous and beneficial partners and products.",
   partnerDisclosure:
-    "Integrity Payments, Inc. is an official Sales Agency and Partner of EPSG, LLC, a registered ISO/MSP of Wells Fargo Bank and Merrick Bank.",
+    "Resilient Payments, Inc. is an official Sales Agency and Partner of EPSG, LLC, a registered ISO/MSP of Wells Fargo Bank and Merrick Bank.",
   footerValueProps: [
     "Decades of Experience",
     "Solid, Reliable Solutions",
@@ -61,7 +61,7 @@ export const home = {
   slides: [
     {
       className: "one",
-      preTitle: "Welcome to Integrity Payments",
+      preTitle: "Welcome to Resilient Payments",
       title: "Payments. Payroll. Perfect.",
       emphasis: "Payroll",
       description:
@@ -92,7 +92,7 @@ export const home = {
   ],
   overviewTitle: "We Make Operating Your Business Easier",
   overview:
-    "Our mission at Integrity Payments is to provide our customers with the best personalized service in the industry. We tailor fit best-in-class, low-cost solutions for merchants with honesty, transparency, and Integrity.",
+    "Our mission at Resilient Payments is to provide our customers with the best personalized service in the industry. We tailor fit best-in-class, low-cost solutions for merchants with honesty, transparency, and Integrity.",
   overviewBullets: [
     "Accept payments",
     "Pay your employees",
@@ -234,25 +234,25 @@ export const products = [
 export const testimonials = [
   {
     quote:
-      "Our Integrity Payments agent, James Reville, has been an integral part of the success of my business. He built a custom package that perfectly aligned with my operations, allowing me to focus on growth.",
+      "Our Resilient Payments agent, James Reville, has been an integral part of the success of my business. He built a custom package that perfectly aligned with my operations, allowing me to focus on growth.",
     name: "Matthew Abrantes",
     company: "Patriotic Distributors",
   },
   {
     quote:
-      "Thanks to Theresa Hairston for making the switch over to Integrity Payments very easy and effective for our business. Integrity Payments was able to work out a much lower discount rate than our previous provider.",
+      "Thanks to Theresa Hairston for making the switch over to Resilient Payments very easy and effective for our business. Resilient Payments was able to work out a much lower discount rate than our previous provider.",
     name: "John Wisdom",
     company: "Quitman Health Services",
   },
   {
     quote:
-      "We recently began working with Integrity Payments for our Payroll system. This has been the easiest system I have worked with. The platform is easy to navigate and the reporting is phenomenal.",
+      "We recently began working with Resilient Payments for our Payroll system. This has been the easiest system I have worked with. The platform is easy to navigate and the reporting is phenomenal.",
     name: "Shawn Lewis",
     company: "Christ's Church Kids",
   },
   {
     quote:
-      "Integrity Payments has been such a great company to work with. The customer service is top notch, and everyone at Integrity Payments has been completely professional.",
+      "Resilient Payments has been such a great company to work with. The customer service is top notch, and everyone at Resilient Payments has been completely professional.",
     name: "Daniel Yaniv",
     company: "Lavelier",
   },
@@ -273,21 +273,21 @@ export const pageContent = {
   payments: {
     title: "Credit Card Processing",
     description:
-      "Experience the very best in payment solutions with Integrity Payments. Whether you are a brick-and-mortar business or an eCommerce business, our tailored solutions make payments easier with Integrity and reliability.",
+      "Experience the very best in payment solutions with Resilient Payments. Whether you are a brick-and-mortar business or an eCommerce business, our tailored solutions make payments easier with Integrity and reliability.",
     cta: "Request a Free Consultation",
     image: "/images/integrity-payments/hero/accept-payments-anywhere.jpg",
     imageAlt: "Customer paying securely with a mobile card terminal",
     showcaseTitle: "Accept Payments Securely Anywhere",
     intro:
-      "Give customers a smooth way to pay in store, online, by invoice, or by text. Integrity Payments helps match your business with practical payment tools, transparent reporting, and support that makes daily transactions feel simple.",
-    highlights: ["In-person, online, mobile, invoice, and text-to-pay options", "Cost-reduction programs built around your business model", "Clear reporting with support from a real Integrity Payments advisor"],
+      "Give customers a smooth way to pay in store, online, by invoice, or by text. Resilient Payments helps match your business with practical payment tools, transparent reporting, and support that makes daily transactions feel simple.",
+    highlights: ["In-person, online, mobile, invoice, and text-to-pay options", "Cost-reduction programs built around your business model", "Clear reporting with support from a real Resilient Payments advisor"],
     sections: [
       { title: "Eliminate or Reduce Processing Costs", bullets: ["Compliant Discount for Cash Programs", "Dual Pricing programs", "Visa compliant 3% surcharge programs", "Ecommerce cost reduction programs"] },
       { title: "Card Present, Card Not Present & eCommerce Solutions", bullets: ["Stand-alone terminals", "Self-service kiosks", "Point of Sale systems", "Mobile payment acceptance", "Contactless/Apple Pay/Tap to Pay/NFC", "QuickBooks payment integration", "Recurring billing", "Invoicing by text or email", "B2B/B2G solutions"] },
       { title: "High Risk Merchants", description: "If your business type is classified as high risk, we prefer to call you a specialty account. We may be able to help with CBD, dispensaries, nutraceuticals, MLM, travel, firearms, credit repair, and other specialty account types." },
       { title: "Text to Pay, Text to Give, Text to Donate", description: "Send invoices by email or text, offer easy text payment, create donation programs, and use QR codes to collect payments." },
       { title: "Business to Business, Business to Government", description: "Automate Level 2 and Level 3 processing to help qualifying card types reach lower interchange rates without manual effort." },
-      { title: "Reporting and Customer Support", description: "Clear reporting with fees shown, premium and Tier 2 support available 24/7, and an Integrity Payments agent assigned directly to your account." },
+      { title: "Reporting and Customer Support", description: "Clear reporting with fees shown, premium and Tier 2 support available 24/7, and a Resilient Payments agent assigned directly to your account." },
     ],
   },
   "pos-systems": {
@@ -316,7 +316,7 @@ export const pageContent = {
     imageAlt: "Payroll and HR team reviewing employee information",
     showcaseTitle: "Payroll Support With a Human Touch",
     intro:
-      "Payroll should feel dependable, accurate, and easy to manage. Integrity Payments connects you with payroll and HR support designed to reduce manual work, improve confidence, and keep your team paid on time.",
+      "Payroll should feel dependable, accurate, and easy to manage. Resilient Payments connects you with payroll and HR support designed to reduce manual work, improve confidence, and keep your team paid on time.",
     highlights: ["Dedicated U.S.-based payroll support", "Payroll tax, time and attendance, HR, and workers comp options", "Employee benefits and retirement support in one conversation"],
     sections: [
       { title: "Traditional or Internet Payroll", description: "We provide traditional payroll services and internet payroll services customized to reduce your workload and simplify operations." },
@@ -400,7 +400,7 @@ export const pageContent = {
   "web-development": {
     title: "Website Development",
     description:
-      "Integrity Payments can assist with website development, design, eCommerce, and digital marketing services.",
+      "Resilient Payments can assist with website development, design, eCommerce, and digital marketing services.",
     cta: "Speak to a Designer",
     image: "/images/integrity-payments/hero/website-development.jpg",
     imageAlt: "Website development and ecommerce planning",
@@ -418,13 +418,13 @@ export const pageContent = {
   },
   atm: {
     title: "ATM Machines",
-    description: "Need an ATM machine in your business? Contact Integrity Payments for MobilePay ATM services.",
+    description: "Need an ATM machine in your business? Contact Resilient Payments for MobilePay ATM services.",
     cta: "Speak with our ATM division",
     image: "/images/integrity-payments/hero/atm-machines.png",
     imageAlt: "ATM machine service and equipment",
     showcaseTitle: "Reliable ATM Solutions for Busy Locations",
     intro:
-      "An ATM can improve convenience for customers while supporting cash access and business traffic. Integrity Payments helps with ATM equipment, processing, monitoring, and support.",
+      "An ATM can improve convenience for customers while supporting cash access and business traffic. Resilient Payments helps with ATM equipment, processing, monitoring, and support.",
     highlights: ["ATM sales, service, processing, and equipment support", "Remote monitoring, reporting, eJournal, and settlement options", "Branding, wraps, toppers, and advertising tools"],
     sections: [
       { title: "Partnership Solutions", description: "Partnership solutions for merchants and operators nationwide." },
@@ -435,7 +435,7 @@ export const pageContent = {
   },
   "business-insurance": {
     title: "Business Insurance",
-    description: "Need business insurance? Integrity Payments can help connect you with coverage support.",
+    description: "Need business insurance? Resilient Payments can help connect you with coverage support.",
     cta: "Submit Insurance Request",
     image: "/images/integrity-payments/hero/business-insurance.jpg",
     imageAlt: "Business insurance coverage planning",
@@ -446,12 +446,12 @@ export const pageContent = {
     sections: [
       { title: "Coverage Options", bullets: ["Workers Comp", "General Liability", "Commercial Property", "Commercial Auto", "Professional", "Cyber", "Business Interruption", "Errors and Omissions", "Garage Keepers", "Directors", "Product", "Property", "Group Health", "Home Based Businesses", "Business Owner's Policies"] },
     ],
-    formFields: ["DBA Name", "Contact Name", "Best number to reach", "Email address", "Website Link", "Type of Insurance requested", "Integrity Payments Sales Agent", "Best time for our Insurance Expert to call you"],
+    formFields: ["DBA Name", "Contact Name", "Best number to reach", "Email address", "Website Link", "Type of Insurance requested", "Resilient Payments Sales Agent", "Best time for our Insurance Expert to call you"],
   },
   "partner-with-us": {
     title: "Partner With Us",
     description:
-      "Integrity Payments believes in true win/win partnerships. We make partnerships easy and represent referral partners with professionalism and Integrity.",
+      "Resilient Payments believes in true win/win partnerships. We make partnerships easy and represent referral partners with professionalism and Integrity.",
     sections: [
       { title: "Strategic Alliances", bullets: ["Banks/Financial Institutions", "Software Companies", "Point of Sale Companies", "Payment Gateways", "Agent/Reseller Programs"] },
       { title: "Referral Partners", bullets: ["Associations", "Accountants", "Business to Business Companies", "Business Attorneys", "People who know a lot of business owners"] },
@@ -462,42 +462,42 @@ export const pageContent = {
     description:
       "If you are a bank, financial institution, software company, point of sale company, gateway solution, or someone seeking an agent/reseller deal, you have come to the right place.",
     sections: [
-      { title: "We Will Take Care of Your Customers", description: "Aligning with Integrity Payments can offer your merchants best-in-class solutions, low rates, no hidden fees, excellent customer service, and a stronger relationship with your business." },
+      { title: "We Will Take Care of Your Customers", description: "Aligning with Resilient Payments can offer your merchants best-in-class solutions, low rates, no hidden fees, excellent customer service, and a stronger relationship with your business." },
     ],
     formFields: ["Name", "Company", "Phone Number", "Email Address", "Why I am a good fit for a partnership with Integrity"],
   },
   "referral-partners-2": {
     title: "Referral Partners",
     description:
-      "If you are an association, accounting firm, B2B company, legal firm, consultant, or simply know business owners, partnering with Integrity Payments may be one of the best decisions you make.",
+      "If you are an association, accounting firm, B2B company, legal firm, consultant, or simply know business owners, partnering with Resilient Payments may be one of the best decisions you make.",
     sections: [
-      { title: "White Glove Referral Support", description: "Integrity Payments will take care of your referral customers, build custom solutions for their specific needs, offer affordable costs, and provide White Glove Treatment." },
+      { title: "White Glove Referral Support", description: "Resilient Payments will take care of your referral customers, build custom solutions for their specific needs, offer affordable costs, and provide White Glove Treatment." },
     ],
     formFields: ["Name", "Company", "Phone Number", "Email Address", "Why I am a good fit for a partnership with Integrity"],
   },
   careers: {
     title: "Careers",
     description:
-      "Seeking the final stop in your sales or sales management career? Integrity Payments offers lifetime residuals at some of the industry's highest payouts, with options for large upfront bonuses on your deals.",
+      "Seeking the final stop in your sales or sales management career? Resilient Payments offers lifetime residuals at some of the industry's highest payouts, with options for large upfront bonuses on your deals.",
     cta: "Learn More",
     sections: [
       { title: "Build Referral Sources and Networks", bullets: ["Your referral partner wins", "Your portfolio and income win", "Most importantly, your customers win"] },
-      { title: "Careers at Integrity Payments", description: "Because we think you are worth it. If you take care of your people, your people will take care of you." },
+      { title: "Careers at Resilient Payments", description: "Because we think you are worth it. If you take care of your people, your people will take care of you." },
     ],
   },
   "about-us": {
     title: "About Us",
     description:
-      "Integrity Payments brings decades of experience to your doorstep. Founded by industry executives from Fortune 500 companies in payments, payroll, and insurance, our experience brings your business a wealth of knowledge.",
+      "Resilient Payments brings decades of experience to your doorstep. Founded by industry executives from Fortune 500 companies in payments, payroll, and insurance, our experience brings your business a wealth of knowledge.",
     sections: [
       { title: "Why This Matters", description: "We know the games competitors play to pad profits while customers unknowingly pay the price. We refuse to operate this way. Being honest is our greatest strategy and biggest advantage." },
       { title: "The Golden Rule in Business", description: "Our company was founded on the philosophy of always practicing the Golden Rule in Business. This means treating customers, partners, and sales agents exactly the way we would expect to be treated." },
-      { title: "Welcome", description: "Integrity Payments always has your best interest at heart. We want to earn your business and your trust every single day." },
+      { title: "Welcome", description: "Resilient Payments always has your best interest at heart. We want to earn your business and your trust every single day." },
     ],
   },
   testimonials: {
     title: "Testimonials",
-    description: "Hear from businesses that use Integrity Payments for processing, payroll, funding, and other essential business services.",
+    description: "Hear from businesses that use Resilient Payments for processing, payroll, funding, and other essential business services.",
     testimonials,
   },
   contact: {

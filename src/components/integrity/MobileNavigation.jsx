@@ -26,7 +26,7 @@ export default function MobileNavigation() {
       <div className={`integrity-mobile-panel ${isOpen ? "is-open" : ""}`} aria-hidden={!isOpen}>
         <div className="integrity-mobile-panel-header">
           <Link href="/" className="integrity-mobile-logo" onClick={() => setIsOpen(false)}>
-            <Image src={site.logo} width={248} height={57} alt="Integrity Payments" priority />
+            <Image src={site.logo} width={300} height={75} alt="Resilient Payments" priority />
           </Link>
           <button
             className="integrity-mobile-close"

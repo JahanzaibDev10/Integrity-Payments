@@ -16,7 +16,7 @@ function AboutOne() {
                         {/* about left */}
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-md-2 order-sm-2 order-2 mt_md--50 mt_sm--50">
                             <div className="rts-title-area">
-                                <p className="pre-title">More About Integrity Payments</p>
+                                <p className="pre-title">More About Resilient Payments</p>
                                 <h2 className="title">{home.overviewTitle}</h2>
                             </div>
                             <div className="about-inner">

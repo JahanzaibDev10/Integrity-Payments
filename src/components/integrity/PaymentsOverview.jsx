@@ -11,7 +11,7 @@ export default function PaymentsOverview() {
           <Image src="/images/integrity-payments/home/online-payment.jpg" alt="Online payment with smartphone or laptop" width={1280} height={854} sizes="(max-width: 900px) 100vw, 48vw" />
         </div>
         <div className="integrity-split-copy">
-          <h2>Integrity Payments makes Credit Card acceptance easy</h2>
+          <h2>Resilient Payments makes Credit Card acceptance easy</h2>
           <ServiceList items={paymentServices} />
           <Link className="integrity-secondary-button" href="/payments">
             Learn More

@@ -8,7 +8,7 @@ export default function BusinessNeedsOverview() {
     <section className="integrity-section integrity-section-muted">
       <div className="integrity-container integrity-split integrity-split-reverse">
         <div className="integrity-split-copy">
-          <h2>Integrity Payments also offers other critical business needs such as:</h2>
+          <h2>Resilient Payments also offers other critical business needs such as:</h2>
           <ServiceList items={businessNeeds} />
           <Link className="integrity-secondary-button" href="/products">
             Learn More

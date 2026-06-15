@@ -38,7 +38,7 @@ export default function IntegrityPage({ slug }) {
             <div className="row">
               <div className="col-lg-10 offset-lg-1">
                 <div className="rts-title-area integrity-page-title text-center" data-page-title={content.title}>
-                  <p className="pre-title">Integrity Payments</p>
+                  <p className="pre-title">Resilient Payments</p>
                   <h2 className="title">{content.title}</h2>
                   <p className="disc mt--20">{content.description}</p>
                   {content.cta ? (
@@ -136,13 +136,13 @@ export default function IntegrityPage({ slug }) {
                   <div className="row mt--50 align-items-stretch integrity-contact-form-row">
                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                       <div className="contact-image-one integrity-contact-card">
-                        <img src="/images/integrity-payments/business-brainstorming.jpg" alt="Integrity Payments consultation" />
+                        <img src="/images/integrity-payments/business-brainstorming.jpg" alt="Resilient Payments consultation" />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                       <div className="contact-form-area-one integrity-contact-card">
                         <div className="rts-title-area contact text-start">
-                          <p className="pre-title">Contact Integrity Payments</p>
+                          <p className="pre-title">Contact Resilient Payments</p>
                           <h2 className="title">Send Us Your Details</h2>
                         </div>
                         <form id={`${slug}-contact-form`} action="#" method="post">

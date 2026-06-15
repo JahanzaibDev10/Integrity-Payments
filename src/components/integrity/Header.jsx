@@ -8,13 +8,13 @@ export default function Header() {
   return (
     <header className="integrity-header">
       <div className="integrity-header-inner">
-        <Link className="integrity-logo-link" href="/" aria-label="Integrity Payments home">
+        <Link className="integrity-logo-link" href="/" aria-label="Resilient Payments home">
           <Image
             className="integrity-logo"
             src={site.logo}
-            alt="Integrity Payments"
-            width={248}
-            height={57}
+            alt="Resilient Payments"
+            width={320}
+            height={80}
             priority
           />
         </Link>

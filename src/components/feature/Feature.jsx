@@ -18,7 +18,7 @@ function Feature() {
                             <div className="rts-title-area feature text-start pl--30 pl_sm--0">
                                 <p className="pre-title">Credit Card Processing</p>
                                 <h2 className="title feature-title">
-                                    Integrity Payments makes <br />
+                                    Resilient Payments makes <br />
                                     acceptance easy
                                 </h2>
                                 <p>

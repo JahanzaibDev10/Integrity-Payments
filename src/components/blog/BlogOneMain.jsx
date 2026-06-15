@@ -16,7 +16,7 @@ const BlogGridMain = (props) => {
                 </div>
                 <div className="blog-content">
                     <p>
-                        <span>{blogCategory || "Business Solution"} </span>/ Integrity Payments
+                        <span>{blogCategory || "Business Solution"} </span>/ Resilient Payments
                     </p>
                     <Link href={targetHref}>
                         <h5 className="title">

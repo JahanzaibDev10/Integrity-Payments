@@ -19,7 +19,7 @@ export default function HeroCarousel() {
   return (
     <section
       className="integrity-hero"
-      aria-label="Integrity Payments featured services"
+      aria-label="Resilient Payments featured services"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}

@@ -16,7 +16,7 @@ function FooterOne() {
                                         <div className="col-lg-6">
                                             <div className="cta-left-wrapepr">
                                                 <p className="cta-disc">Payments. Payroll. Perfect.</p>
-                                                <h3 className="title">Talk With Integrity Payments</h3>
+                                                <h3 className="title">Talk With Resilient Payments</h3>
                                             </div>
                                         </div>
                                         <div className="col-lg-6">

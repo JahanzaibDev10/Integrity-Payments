@@ -13809,14 +13809,14 @@ body.sal-disabled [data-sal|=flip] {
   max-width: max-content;
 }
 .header-main-one .thumbnail a img.integrity-header-logo-img {
-  width: 220px;
-  max-width: 220px;
+  width: 300px;
+  max-width: 300px;
   height: auto;
   display: block;
-  margin-left: -70px;
+  margin-left: -44px;
 }
 img.integrity-sidebar-logo-img {
-  width: 220px;
+  width: 280px;
   max-width: 100%;
   height: auto;
 }
@@ -13831,8 +13831,9 @@ img.integrity-sidebar-logo-img {
     margin-left: 12px;
   }
   .header-one .header-main-one .thumbnail a img.integrity-header-logo-img {
-    width: 190px;
-    max-width: 190px;
+    width: 260px;
+    max-width: 260px;
+    margin-left: -36px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -13840,9 +13841,9 @@ img.integrity-sidebar-logo-img {
     padding: 24px 0;
   }
   .header-main-one .thumbnail a img.integrity-header-logo-img {
-    width: 190px;
-    max-width: 190px;
-    margin-left: -42px;
+    width: 240px;
+    max-width: 240px;
+    margin-left: -24px;
   }
   .header-one .main-header .button-area {
     justify-content: flex-end;
@@ -13854,9 +13855,9 @@ img.integrity-sidebar-logo-img {
     padding: 18px 0;
   }
   .header-main-one .thumbnail a img.integrity-header-logo-img {
-    width: 138px;
-    max-width: 138px;
-    margin-left: -8px;
+    width: 190px;
+    max-width: 190px;
+    margin-left: -6px;
   }
   .header-one .main-header .button-area .quote-btn {
     display: none;
@@ -13867,8 +13868,8 @@ img.integrity-sidebar-logo-img {
     padding: 14px 0;
   }
   .header-main-one .thumbnail a img.integrity-header-logo-img {
-    width: 112px;
-    max-width: 112px;
+    width: 158px;
+    max-width: 158px;
     margin-left: -2px;
   }
   .header-one .main-header .button-area {

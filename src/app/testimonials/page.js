@@ -2,7 +2,7 @@ import IntegrityPage from "@/components/integrity/IntegrityPage";
 
 export const metadata = {
   title: "Testimonials",
-  description: "Customer testimonials for Integrity Payments processing, payroll, funding, and business services.",
+  description: "Customer testimonials for Resilient Payments processing, payroll, funding, and business services.",
 };
 
 export default function Page() {

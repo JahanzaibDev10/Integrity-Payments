@@ -20,7 +20,7 @@ function TeamOne() {
                         <div className="col-12">
                             <div className="rts-title-area team text-center">
                                 <p className="pre-title">Testimonials</p>
-                                <h2 className="title">Businesses Using Integrity Payments</h2>
+                                <h2 className="title">Businesses Using Resilient Payments</h2>
                             </div>
                         </div>
                     </div>
