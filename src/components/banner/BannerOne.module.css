@@ -197,23 +197,25 @@
 
 @media (max-width: 768px) {
   .heroWrapper {
-    height: auto;
-    min-height: 640px;
+    height: calc(100svh - 60px);
+    min-height: 560px;
   }
   .slideInner {
-    min-height: 640px;
-    padding: 120px 5% 90px;
+    min-height: 100%;
+    padding: 92px 5% 86px;
     align-items: flex-end;
     justify-content: center;
+    background-size: contain;
     background-position: center top;
+    background-color: #f5eeee;
   }
   .overlay {
     /* Darken ONLY the bottom to keep the picture totally clear at top */
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 0.85) 100%
+      rgba(0, 0, 0, 0) 42%,
+      rgba(0, 0, 0, 0.86) 100%
     );
   }
   .contentBox {
@@ -252,40 +254,74 @@
 }
 
 @media (max-width: 480px) {
-  .heroWrapper,
-  .slideInner {
-    min-height: 600px;
+  .heroWrapper {
+    min-height: 430px;
   }
   .slideInner {
-    padding: 110px 20px 82px;
+    padding: 76px 18px 72px;
   }
   .title {
-    font-size: 1.9rem;
-    line-height: 1.14;
+    font-size: 1.65rem;
+    line-height: 1.12;
+    margin-bottom: 0.7rem;
   }
   .description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;
+    font-size: 0.82rem;
+    line-height: 1.42;
+    margin-bottom: 1rem;
   }
   .preTitle {
-    font-size: 0.7rem;
+    font-size: 0.62rem;
     line-height: 1.35;
     letter-spacing: 1px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.55rem;
   }
   .ctaButton {
     width: 100%;
-    max-width: 260px;
-    padding: 0.85rem 1.5rem;
-    font-size: 0.95rem;
+    max-width: 232px;
+    min-height: 48px;
+    padding: 0.78rem 1.25rem;
+    font-size: 0.84rem;
   }
   .sliderNav {
-    bottom: 16px;
+    bottom: 14px;
   }
   .navPrev,
   .navNext {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 620px) {
+  .heroWrapper {
+    min-height: calc(100svh - 60px);
+  }
+  .slideInner {
+    padding: 60px 16px 62px;
+  }
+  .title {
+    font-size: 1.42rem;
+  }
+  .description {
+    font-size: 0.74rem;
+    margin-bottom: 0.8rem;
+  }
+  .preTitle {
+    font-size: 0.56rem;
+    margin-bottom: 0.45rem;
+  }
+  .ctaButton {
+    max-width: 216px;
+    min-height: 44px;
+    font-size: 0.78rem;
+  }
+  .sliderNav {
+    bottom: 10px;
+  }
+  .navPrev,
+  .navNext {
+    width: 36px;
+    height: 36px;
   }
 }
