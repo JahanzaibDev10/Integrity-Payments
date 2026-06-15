@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import HeaderOne from "@/components/header/HeaderOne";
@@ -17,11 +18,11 @@ export default function NotFound() {
                         <div className="col-12">
                             <div className="404wrapper text-center">
                                 <div className="thumbnail">
-                                    <img src="assets/images/contact/shape/404.png" alt="404 Not Found" />
+                                    <Image src="/assets/images/contact/shape/404.png" alt="404 Not Found" width={400} height={300} />
                                 </div>
                                 <h2 className="title mt--40">Oops! Nothing Was Found</h2>
                                 <p className="disc">
-                                    Sorry, we couldn't find the page you where looking for. We suggest{" "}
+                                    Sorry, we couldn&apos;t find the page you where looking for. We suggest{" "}
                                     <br /> that you return to homepage.
                                 </p>
                                 <Link className="rts-btn btn-primary" href={'/'}>

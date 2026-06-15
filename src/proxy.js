@@ -46,7 +46,7 @@ const legacyTemplateRoutes = [
   "/testimonial-style-1",
 ];
 
-export function middleware(request) {
+export function proxy(request) {
   const { pathname } = request.nextUrl;
   const shouldRedirect = legacyTemplateRoutes.some(
     (route) => pathname === route || pathname.startsWith(`${route}/`)

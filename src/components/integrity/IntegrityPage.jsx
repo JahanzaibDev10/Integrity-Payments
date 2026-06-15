@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import HeaderOne from "@/components/header/HeaderOne";
 import FooterOne from "@/components/footer/FooterOne";
@@ -55,7 +56,7 @@ export default function IntegrityPage({ slug }) {
                 {content.testimonials.map((item) => (
                   <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12" key={`${item.name}-${item.company}`}>
                     <article className="integrity-template-card">
-                      <p className="disc">"{item.quote}"</p>
+                      <p className="disc">&quot;{item.quote}&quot;</p>
                       <h5 className="title mt--20">{item.name}</h5>
                       <span>{item.company}</span>
                     </article>
@@ -68,7 +69,7 @@ export default function IntegrityPage({ slug }) {
                   <div className="row align-items-center g-5 mt--50 integrity-service-showcase">
                     <div className="col-lg-6 col-md-12">
                       <div className="integrity-service-image">
-                        <img src={content.image} alt={content.imageAlt || content.title} />
+                        <Image src={content.image} alt={content.imageAlt || content.title} width={1280} height={850} sizes="(max-width: 991px) 100vw, 50vw" />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12">
@@ -136,7 +137,7 @@ export default function IntegrityPage({ slug }) {
                   <div className="row mt--50 align-items-stretch integrity-contact-form-row">
                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                       <div className="contact-image-one integrity-contact-card">
-                        <img src="/images/integrity-payments/business-brainstorming.jpg" alt="Resilient Payments consultation" />
+                        <Image src="/images/integrity-payments/business-brainstorming.jpg" alt="Resilient Payments consultation" width={1280} height={850} sizes="(max-width: 991px) 100vw, 50vw" />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
