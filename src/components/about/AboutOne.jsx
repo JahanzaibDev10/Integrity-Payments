@@ -89,13 +89,14 @@ function AboutOne() {
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-md-1 order-sm-1 order-1">
                             <div className="about-one-thumbnail">
                                 <img
-                                    src="/images/integrity-payments/home/business-brainstorming.jpg"
-                                    alt="Business consultants reviewing operating solutions"
+                                    src="/images/integrity-payments/home/advisor-pointing.png"
+                                    alt="Business advisor pointing upward"
                                 />
                                 <img
                                     className="small-img"
                                     src="/images/integrity-payments/home/payment-smartphone.jpg"
                                     alt="Secure mobile payment acceptance"
+                                    style={{ left: "auto", right: "-32px", top: "7%" }}
                                 />
                                 <div className="experience">
                                     <div className="left single">
@@ -119,3 +120,4 @@ function AboutOne() {
 }
 
 export default AboutOne
+

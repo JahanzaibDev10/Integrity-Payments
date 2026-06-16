@@ -68,8 +68,20 @@ export default function IntegrityPage({ slug }) {
                 {content.image ? (
                   <div className="row align-items-center g-5 mt--50 integrity-service-showcase">
                     <div className="col-lg-6 col-md-12">
-                      <div className="integrity-service-image">
-                        <Image src={content.image} alt={content.imageAlt || content.title} width={1280} height={850} sizes="(max-width: 991px) 100vw, 50vw" />
+                      <div className={`integrity-service-image ${slug === "partner-with-us" ? "integrity-partner-image-wrap" : ""}`}>
+                        <Image
+                          className={`integrity-service-main-image ${slug === "partner-with-us" ? "integrity-partner-image" : ""}`}
+                          src={content.image}
+                          alt={content.imageAlt || content.title}
+                          width={1280}
+                          height={850}
+                          sizes="(max-width: 991px) 100vw, 50vw"
+                          style={
+                            slug === "partner-with-us"
+                              ? { height: "auto", objectFit: "fill", objectPosition: "center center", background: "transparent" }
+                              : undefined
+                          }
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12">
@@ -234,3 +246,4 @@ export default function IntegrityPage({ slug }) {
     </>
   );
 }
+

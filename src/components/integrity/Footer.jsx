@@ -39,14 +39,7 @@ export default function Footer() {
           </em>
         </p>
       </div>
-      <div className="integrity-footer-eta">
-        <div className="integrity-container">
-          <p>
-            <em>Resilient Payments is a proud member of the Electronic Transactions Association.</em>
-          </p>
-          <Image src={site.etaLogo} alt="Electronic Transactions Association logo" width={650} height={297} sizes="(max-width: 700px) 220px, 260px" />
-        </div>
-      </div>
     </footer>
   );
 }
+

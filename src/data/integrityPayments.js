@@ -105,10 +105,10 @@ export const heroSlides = [
     position: "center bottom",
   },
   {
-    headingLines: ["Text To Pay/Text Invoicing", "Text Marketing Solutions"],
+    heading: "401 K Retirement Plan Support",
     cta: "Learn More",
-    href: "/text-message-tools",
-    image: "/images/integrity-payments/hero/text-message-tools.jpg",
+    href: "/401-k",
+    image: "/images/integrity-payments/home/business-brainstorming.jpg",
     position: "center center",
   },
 ];
@@ -231,9 +231,9 @@ export const pageContent = {
       "Employee retention tools designed to help employers provide meaningful benefits and support take-home pay.",
   },
   "text-message-tools": {
-    title: "Text Message Tools",
+    title: "401 K",
     description:
-      "Text-to-pay, text invoicing, text-to-give, donation tools, and text marketing solutions for easier customer communication.",
+      "Retirement plan support including traditional 401(k), Roth 401(k), Safe Harbor, and profit-sharing options.",
   },
   "web-development": {
     title: "Website Development/Redevelopment",
@@ -287,3 +287,4 @@ export const pageContent = {
       "Connect with Resilient Payments to learn which business operating solutions fit your needs.",
   },
 };
+

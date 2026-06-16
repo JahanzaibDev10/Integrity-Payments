@@ -9,7 +9,11 @@ import "../../public/assets/css/style.css";
 
 
 export const metadata = {
-  title: "Resilient Payments",
+  title: {
+    default: "Resilient Payments",
+    template: "%s",
+  },
+  applicationName: "Resilient Payments",
   description:
     "Resilient Payments helps businesses with payments, payroll, lending, web development, ATM machines, business insurance, and partner programs.",
   icons: {
@@ -30,3 +34,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

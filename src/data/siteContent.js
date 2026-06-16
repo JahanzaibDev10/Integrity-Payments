@@ -11,9 +11,9 @@ export const site = {
   favicon: "/images/integrity-payments/integrity-favicon.png",
   etaLogo: "/images/integrity-payments/eta-logo.png",
   description:
-    "Resilient Payments, Inc. is a team of national business consultants connecting our clients to numerous and beneficial partners and products.",
+    "Resilient Payments, Inc. is a team of national business consultants connecting our clients to numerous beneficial partners and products.",
   partnerDisclosure:
-    "Resilient Payments, Inc. is an official Sales Agency and Partner of EPSG, LLC, a registered ISO/MSP of Wells Fargo Bank and Merrick Bank.",
+    "Resilient Payments, Inc. is an official Sales Agency & Partner of EPSG, LLC, a registered ISO/MSP of Wells Fargo Bank & Merrick Bank.",
   footerValueProps: [
     "Decades of Experience",
     "Solid, Reliable Solutions",
@@ -24,20 +24,19 @@ export const site = {
 };
 
 export const navigation = [
-  { label: "Home", href: "/" },
   {
     label: "Services",
     href: "/products",
     children: [
+      { label: "All Services", href: "/products" },
       { label: "Payments", href: "/payments" },
-      { label: "POS Systems", href: "/pos-systems" },
-      { label: "Payroll", href: "/payroll" },
-      { label: "The CHAMP Plan", href: "/champ" },
+      { label: "Payroll & HR", href: "/payroll" },
       { label: "Lending", href: "/lending" },
+      { label: "The CHAMP Plan", href: "/champ" },
       { label: "401 K", href: "/401-k" },
-      { label: "ATM Machines", href: "/atm" },
+      { label: "Website Development", href: "/web-development" },
+      { label: "ATM machines", href: "/atm" },
       { label: "Business Insurance", href: "/business-insurance" },
-      { label: "Website Development & SEO", href: "/web-development" },
     ],
   },
   {
@@ -49,13 +48,11 @@ export const navigation = [
       { label: "Referral Partners", href: "/referral-partners-2" },
     ],
   },
-  { label: "Careers", href: "/careers" },
   { label: "About Us", href: "/about-us" },
-  { label: "Testimonials", href: "/testimonials" },
   { label: "Contact", href: "/contact" },
 ];
 
-export const productLinks = navigation[1].children;
+export const productLinks = navigation[0].children.filter(item => item.label !== "All Products");
 
 export const home = {
   slides: [
@@ -158,12 +155,12 @@ export const home = {
   ],
   insights: [
     {
-      title: "How Text-to-Pay Can Reduce Friction",
-      href: "/text-message-tools",
-      label: "Billing Tools",
+      title: "401 K Options for Growing Teams",
+      href: "/401-k",
+      label: "401 K",
       summary:
-        "Let customers pay through a secure link sent by text while your team keeps billing conversations simple and fast.",
-      image: "/images/integrity-payments/hero/text-message-tools.jpg",
+        "Explore retirement plan support that can help strengthen employee confidence, hiring, and long-term retention.",
+      image: "/images/integrity-payments/home/business-brainstorming.jpg",
     },
     {
       title: "Choosing Payment Tools for Modern Checkout",
@@ -220,14 +217,16 @@ export const products = [
       "Lowered cost of acceptance, current payment technology, card-present and card-not-present solutions, high risk merchant support, and text to pay.",
     bullets: ["Lowered cost of acceptance", "Today's technology and solutions", "Card Present/Card Not Present", "High Risk Merchants", "Text To Pay"],
     icon: "assets/images/service/icon/01.svg",
+    image: "/images/integrity-payments/hero/accept-payments-anywhere.jpg",
   },
   {
     title: "POS Systems",
     href: "/pos-systems",
     summary:
-      "Point of sale options for retail, restaurant, mobile, contactless, and integrated payment acceptance.",
-    bullets: ["Point of Sale systems", "Self-service kiosks", "Mobile payment acceptance", "Contactless payments", "QuickBooks payment integration"],
+      "Point-of-sale systems for retail, restaurant, service, and mobile businesses that need reliable checkout, integrated payments, and clearer reporting.",
+    bullets: ["Retail and restaurant workflows", "Integrated payments", "Contactless checkout", "Mobile payment options", "Business reporting"],
     icon: "assets/images/service/icon/02.svg",
+    image: "/images/integrity-payments/smartphone-payment.jpg",
   },
   {
     title: "Payroll",
@@ -236,14 +235,7 @@ export const products = [
       "Payroll services, human resource assistance, workers comp, time and attendance, 401(k), and employee benefits.",
     bullets: ["Payroll Services", "Human Resource assistance", "Workers Comp", "Time and Attendance", "401K", "Employee Benefits"],
     icon: "assets/images/service/icon/03.svg",
-  },
-  {
-    title: "The CHAMP Plan",
-    href: "/champ",
-    summary:
-      "Employee retention tools that can provide basic healthcare and prescriptions, help employees take home more pay, and create new employer revenue.",
-    bullets: ["Employee Retention Tools", "Free basic healthcare and prescriptions", "Give employees a free pay raise", "No cost to you as the employer"],
-    icon: "assets/images/service/icon/04.svg",
+    image: "/images/integrity-payments/hero/payroll-hr.jpg",
   },
   {
     title: "Lending",
@@ -252,33 +244,25 @@ export const products = [
       "Working capital, SBA loans, asset based lending, equipment leasing, lines of credit, and cash advances.",
     bullets: ["Working Capital", "SBA Loans", "Asset Based Lending", "Equipment Leasing", "Lines of Credit", "Cash Advances"],
     icon: "assets/images/service/icon/05.svg",
+    image: "/images/integrity-payments/hero/business-lending.jpg",
   },
   {
-    title: "401 K",
-    href: "/401-k",
+    title: "The Champ Plan",
+    href: "/champ",
     summary:
-      "Retirement plan support including traditional and Roth 401(k)s, Safe Harbor plans, and profit-sharing plan options.",
-    bullets: ["Traditional 401(k)", "Roth 401(k)", "Safe Harbor plans", "Profit-sharing options", "Employee benefits support"],
-    icon: "assets/images/service/icon/06.svg",
+      "Employee retention tools that can provide basic healthcare and prescriptions, help employees take home more pay, and create new employer revenue.",
+    bullets: ["Employee Retention Tools", "Free basic healthcare and prescriptions", "Give employees a free pay raise", "No cost to you as the employer"],
+    icon: "assets/images/service/icon/04.svg",
     image: "/images/integrity-payments/hero/payroll-hr.jpg",
   },
   {
-    title: "Text Messaging Tools",
-    href: "/text-message-tools",
-    summary:
-      "Text to pay, text invoicing, text to give or donate, text message marketing, and customer specials or promotions.",
-    bullets: ["Text to Pay", "Text Invoicing", "Text to Give/Donate", "Text Message Marketing", "Text Specials and Promos"],
-    icon: "assets/images/service/icon/07.svg",
-    image: "/images/integrity-payments/hero/text-message-tools.jpg",
-  },
-  {
-    title: "Website Development & SEO",
-    href: "/web-development",
-    summary:
-      "Website starter packages through advanced eCommerce builds, hosting, newsletters, live chat, and digital marketing services.",
-    bullets: ["Website starter packages", "Shopping Carts", "eCommerce", "Hosting", "Newsletters", "Live Chat"],
-    icon: "assets/images/service/icon/08.svg",
-    image: "/images/integrity-payments/hero/website-development.jpg",
+    title: "401 K",
+      href: "/401-k",
+      summary:
+        "Retirement plan support including traditional 401(k), Roth 401(k), Safe Harbor plans, and profit-sharing options for growing teams.",
+      bullets: ["Traditional 401(k)", "Roth 401(k)", "Safe Harbor plans", "Profit-sharing plan options", "Employee retirement support"],
+      icon: "assets/images/service/icon/07.svg",
+      image: "/images/integrity-payments/home/business-brainstorming.jpg",
   },
   {
     title: "ATM Machines",
@@ -297,6 +281,15 @@ export const products = [
     bullets: ["Liability", "Property", "Commercial Auto", "EPLI", "Employee benefits"],
     icon: "assets/images/service/icon/08.svg",
     image: "/images/integrity-payments/hero/business-insurance.jpg",
+  },
+  {
+    title: "Website Development & SEO",
+    href: "/web-development",
+    summary:
+      "Website starter packages through advanced eCommerce builds, hosting, newsletters, live chat, SEO, and digital marketing services.",
+    bullets: ["Website starter packages", "Shopping Carts", "eCommerce", "Hosting", "SEO", "Live Chat"],
+    icon: "assets/images/service/icon/08.svg",
+    image: "/images/integrity-payments/hero/website-development.jpg",
   },
 ];
 
@@ -337,7 +330,7 @@ export const pageContent = {
   products: {
     title: "Services",
     description:
-      "Explore practical business services from Resilient Payments: payment processing, POS systems, payroll, lending, retirement support, messaging tools, ATM machines, business insurance, and web development.",
+      "Explore practical business services from Resilient Payments: payment processing, POS systems, payroll, The Champ Plan, lending, retirement support, ATM machines, business insurance, and website development.",
     cta: "Request a Service Consultation",
     image: "/images/integrity-payments/home/business-brainstorming.jpg",
     imageAlt: "Business owners reviewing Resilient Payments service options",
@@ -345,7 +338,7 @@ export const pageContent = {
     intro:
       "The right service mix should reduce friction, improve cash flow, protect the business, and make everyday operations easier. Resilient Payments helps owners compare options and choose tools that fit how they already work.",
     highlights: [
-      "Payment, payroll, POS, lending, insurance, web, ATM, and messaging support",
+      "Payment, POS, payroll, lending, insurance, website, ATM, and retirement support",
       "Solutions tailored for brick-and-mortar, mobile, service, nonprofit, and eCommerce teams",
       "A consultative process focused on cost, reliability, support, and long-term fit",
     ],
@@ -463,19 +456,20 @@ export const pageContent = {
     ],
   },
   "text-message-tools": {
-    title: "Text Tools to Help Your Business",
-    description: "Text-to-pay, text invoicing, text-to-give, donation tools, and text marketing solutions for easier billing and customer communication.",
+    title: "401 K",
+    description:
+      "Retirement plan support including traditional 401(k), Roth 401(k), Safe Harbor plans, and profit-sharing options.",
     cta: "Learn More",
-    image: "/images/integrity-payments/hero/text-message-tools.jpg",
-    imageAlt: "Customer messaging and text payment tools",
-    showcaseTitle: "Make Billing and Customer Messages Easier",
+    image: "/images/integrity-payments/home/business-brainstorming.jpg",
+    imageAlt: "401 K retirement plan support",
+    showcaseTitle: "Support Long-Term Employee Financial Wellness",
     intro:
-      "Text tools help you meet customers where they already are. Send invoices, payment links, donation prompts, promotions, and helpful updates with less friction.",
-    highlights: ["Text-to-pay and text invoice workflows", "Donation and text-to-give options", "Customer communication and marketing support"],
+      "A thoughtful retirement plan can strengthen hiring, retention, and employee confidence while keeping the conversation practical for business owners.",
+    highlights: ["Traditional and Roth 401(k) options", "Safe Harbor and profit-sharing plan support", "Employee benefit conversations connected with payroll support"],
     sections: [
-      { title: "Text to Pay/Text Message Invoicing", description: "Send a customer a Text-To-Pay message with a link to pay their invoice. Two-way text messaging helps answer questions, adjust bills, and manage recurring or monthly subscriptions." },
-      { title: "Text to Give/Text to Donate", description: "Nonprofits and religious organizations can receive donations quickly by advertising a QR code or asking donors to text a keyword to donate." },
-      { title: "All Solutions in One Portal", description: "A simple portal helps manage text billing, customer communication, online payment, and in-person payment options." },
+      { title: "Plan Options", description: "Explore traditional 401(k), Roth 401(k), Safe Harbor, and profit-sharing choices that align with your business." },
+      { title: "Employee Confidence", description: "Retirement support can help employees plan for the future and strengthen long-term retention." },
+      { title: "Business-Focused Guidance", description: "Get practical guidance around retirement benefit conversations without unnecessary complexity." },
     ],
   },
   "web-development": {
@@ -534,8 +528,8 @@ export const pageContent = {
     description:
       "Resilient Payments believes in true win/win partnerships. We make partnerships easy and represent referral partners with professionalism and Integrity.",
     cta: "Start a Partnership Conversation",
-    image: "/images/integrity-payments/home/business-brainstorming.jpg",
-    imageAlt: "Partnership planning conversation",
+    image: "/images/integrity-payments/partner-with-us.png",
+    imageAlt: "Partner with Resilient Payments",
     showcaseTitle: "Partnerships Built on Trust and Follow-Through",
     intro:
       "Your referrals and customer relationships deserve careful handling. Resilient Payments works to protect your reputation while giving your clients access to useful business operating solutions.",
@@ -958,9 +952,9 @@ Object.assign(pageContent["about-us"], {
 
 export const footerLinks = [
   { label: "Home", href: "/" },
-  { label: "Products", href: "/products" },
+  { label: "Services", href: "/products" },
   { label: "Partner with Us", href: "/partner-with-us" },
-  { label: "Careers", href: "/careers" },
   { label: "About Us", href: "/about-us" },
   { label: "Contact", href: "/contact" },
 ];
+

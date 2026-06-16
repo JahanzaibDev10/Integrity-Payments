@@ -1,0 +1,784 @@
+.aboutPage {
+  --integrity-blue: #0064d1;
+  --integrity-logo-blue: #1b3a8e;
+  --integrity-red: #ff251f;
+  --integrity-green: #009a4f;
+  --integrity-grey: #59585a;
+  --integrity-black: #000000;
+  --integrity-white: #ffffff;
+  overflow-x: hidden;
+}
+
+.aboutPage :global(.pre-title),
+.aboutPage :global(.title-area-faq .sub) {
+  color: var(--integrity-red);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.aboutPage :global(.title),
+.aboutPage :global(.title-area-faq .title),
+.aboutPage :global(.title-area-faq .sm-title) {
+  color: #0d182b;
+  letter-spacing: 0;
+}
+
+.introSection {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+  position: relative;
+}
+
+.introRow {
+  --intro-panel-height: 620px;
+}
+
+.introImageColumn,
+.introTextColumn {
+  display: flex;
+}
+
+.consultImageGroup {
+  min-height: var(--intro-panel-height);
+  position: relative;
+  width: 100%;
+}
+
+.consultImageGroup::before {
+  background: var(--integrity-red);
+  content: "";
+  display: none;
+  height: 7px;
+  left: 10px;
+  position: absolute;
+  top: 120px;
+  width: min(50%, 250px);
+  z-index: 3;
+}
+
+.consultImageGroup::after {
+  background: rgba(27, 58, 142, 0.06);
+  border-radius: 8px;
+  content: "";
+  inset: 28px 52px 28px auto;
+  position: absolute;
+  width: 48%;
+  z-index: 0;
+}
+
+.leftIntroImage,
+.rightIntroImage,
+.serviceImage,
+.teamImage {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.leftIntroImage {
+  border: 8px solid #ffffff;
+  border-radius: 8px;
+  bottom: 54px;
+  box-shadow: 0 24px 55px rgba(13, 24, 43, 0.16);
+  height: 380px;
+  left: 0;
+  position: absolute;
+  width: min(48%, 330px);
+  z-index: 2;
+}
+
+.rightIntroImage {
+  border-radius: 8px;
+  box-shadow: 0 24px 65px rgba(13, 24, 43, 0.14);
+  height: calc(var(--intro-panel-height) - 32px);
+  left: auto;
+  position: absolute;
+  right: 34px;
+  top: 16px;
+  transform: none;
+  width: min(56%, 390px);
+  z-index: 1;
+}
+
+.playBadge {
+  align-items: center;
+  background: var(--integrity-red);
+  border: 12px solid #ffffff;
+  border-radius: 50%;
+  bottom: 112px;
+  box-shadow: 0 18px 40px rgba(255, 37, 31, 0.25);
+  color: #ffffff;
+  display: flex;
+  font-size: 20px;
+  height: 86px;
+  justify-content: center;
+  left: 42%;
+  position: absolute;
+  width: 86px;
+  z-index: 4;
+}
+
+.introTextPanel {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: var(--intro-panel-height);
+  width: 100%;
+}
+
+.introTextPanel :global(.rts-title-area .title) {
+  font-size: clamp(34px, 4.2vw, 52px);
+  line-height: 1.12;
+  max-width: 640px;
+}
+
+.introCopy {
+  margin-top: 18px;
+}
+
+.introCopy p {
+  color: var(--integrity-grey);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.welcomeLine {
+  color: var(--integrity-logo-blue) !important;
+  font-weight: 800;
+}
+
+.valueBox {
+  background: #f4f4f4;
+  margin-top: 30px;
+  padding: 28px 32px;
+  width: 100%;
+}
+
+.valueBar + .valueBar {
+  margin-top: 20px;
+}
+
+.valueBarHeader {
+  align-items: center;
+  color: #0d182b;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.valueBarHeader i {
+  color: var(--integrity-red);
+}
+
+.valueLine {
+  background: linear-gradient(90deg, var(--integrity-red), var(--integrity-red) 82%, #ffffff 82%);
+  display: block;
+  height: 8px;
+  width: 100%;
+}
+
+.redButton,
+.readMore,
+.whiteButton {
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 1;
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.redButton {
+  background: var(--integrity-red);
+  color: #ffffff;
+  margin-top: 28px;
+  min-height: 54px;
+  padding: 0 28px;
+}
+
+.redButton:hover,
+.readMore:hover {
+  background: var(--integrity-logo-blue);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.servicesSection,
+.teamSection,
+.feedbackSection {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.88), rgba(245, 245, 245, 0.96)),
+    #f2f2f2;
+  position: relative;
+}
+
+.bigWatermark {
+  color: transparent;
+  display: block;
+  font-size: clamp(72px, 11vw, 150px);
+  font-weight: 900;
+  left: 50%;
+  line-height: 0.8;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  text-transform: capitalize;
+  top: 38px;
+  transform: translateX(-50%);
+  -webkit-text-stroke: 1px rgba(13, 24, 43, 0.06);
+  width: 100%;
+  z-index: 0;
+}
+
+.servicesSection :global(.container),
+.teamSection :global(.container),
+.feedbackSection :global(.container) {
+  position: relative;
+  z-index: 1;
+}
+
+.serviceGrid {
+  display: grid;
+  gap: 52px 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 62px auto 0;
+  max-width: 1050px;
+}
+
+.serviceCard {
+  border-radius: 8px;
+  min-height: 292px;
+  position: relative;
+}
+
+.serviceImageLink {
+  border-radius: 8px;
+  display: block;
+  overflow: hidden;
+}
+
+.serviceImage {
+  aspect-ratio: 1.1 / 1;
+  filter: grayscale(30%);
+  height: auto;
+  transition: transform 220ms ease, filter 220ms ease;
+  width: 100%;
+}
+
+.serviceCard:hover .serviceImage {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+.serviceOverlay {
+  align-items: flex-start;
+  background: linear-gradient(180deg, rgba(13, 24, 43, 0.04), rgba(13, 24, 43, 0.88));
+  border-radius: 8px;
+  bottom: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 0;
+  padding: 0 32px 64px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.serviceIcon {
+  align-items: center;
+  background: #ffffff;
+  color: var(--integrity-red);
+  display: inline-flex;
+  font-size: 28px;
+  height: 70px;
+  justify-content: center;
+  margin-bottom: 22px;
+  outline: 6px solid var(--integrity-red);
+  width: 70px;
+}
+
+.serviceOverlay h3 {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.serviceOverlay p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 10px 0 0;
+  max-height: 58px;
+  overflow: hidden;
+}
+
+.readMore {
+  background: var(--integrity-red);
+  bottom: -26px;
+  color: #ffffff;
+  gap: 8px;
+  height: 58px;
+  left: 32px;
+  min-width: 132px;
+  padding: 0 22px;
+  position: absolute;
+  z-index: 3;
+}
+
+.ctaSection {
+  background: #ffffff;
+  padding: 90px 0;
+}
+
+.ctaBox {
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(255, 37, 31, 0.94), rgba(255, 37, 31, 0.78)),
+    url("/images/integrity-payments/home/business-brainstorming.jpg") center / cover no-repeat;
+  color: #ffffff;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  min-height: 250px;
+  padding: 52px 8.5%;
+}
+
+.ctaBox h2 {
+  color: #ffffff;
+  flex: 1;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.28;
+  margin: 0;
+  max-width: 700px;
+}
+
+.whiteButton {
+  background: #ffffff;
+  color: var(--integrity-red);
+  min-height: 56px;
+  min-width: 178px;
+  padding: 0 28px;
+}
+
+.whiteButton:hover {
+  background: #0d182b;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.teamSection {
+  padding-top: 110px;
+}
+
+.teamGrid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 58px auto 0;
+  max-width: 1040px;
+}
+
+.teamCard {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(13, 24, 43, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.teamImageWrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.teamImage {
+  aspect-ratio: 0.82 / 1;
+  height: 390px;
+  transition: transform 260ms ease, filter 260ms ease;
+  width: 100%;
+}
+
+.teamCard:hover .teamImage {
+  filter: grayscale(45%);
+  transform: scale(1.05);
+}
+
+.teamSocial {
+  align-items: center;
+  bottom: 22px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 22px;
+}
+
+.teamSocial span {
+  align-items: center;
+  background: var(--integrity-red);
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 18px;
+  height: 52px;
+  justify-content: center;
+  width: 52px;
+}
+
+.teamDetails {
+  padding: 28px 26px 30px;
+  text-align: center;
+}
+
+.teamDetails h3 {
+  color: #0d182b;
+  font-size: 24px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+.teamDetails p {
+  color: var(--integrity-red);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.faqSection {
+  background: #0e1624;
+  overflow: hidden;
+  position: relative;
+}
+
+.faqSection :global(.title-area-faq .title),
+.faqSection :global(.title-area-faq .sm-title) {
+  color: #ffffff;
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.faqSection :global(.title-area-faq .sm-title span) {
+  color: var(--integrity-red);
+}
+
+.faqList {
+  margin-top: 34px;
+}
+
+.faqItem {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 4px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.faqItem[open] {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.faqItem summary {
+  align-items: center;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 800;
+  gap: 10px;
+  justify-content: space-between;
+  line-height: 1.35;
+  list-style: none;
+  padding: 22px 26px;
+}
+
+.faqItem[open] summary {
+  color: #0d182b;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqItem summary::after {
+  color: var(--integrity-red);
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  margin-left: auto;
+}
+
+.faqItem[open] summary::after {
+  content: "\f106";
+}
+
+.faqItem summary span {
+  color: var(--integrity-red);
+  flex: 0 0 auto;
+}
+
+.faqItem p {
+  color: #596170;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0 26px 26px 58px;
+}
+
+.faqCollage {
+  min-height: 500px;
+  position: relative;
+}
+
+.faqCollage::before {
+  border-bottom: 190px solid transparent;
+  border-left: 120px solid rgba(255, 255, 255, 0.05);
+  border-top: 190px solid transparent;
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 70px;
+}
+
+.faqImageOne,
+.faqImageTwo,
+.faqImageThree {
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+}
+
+.faqImageOne {
+  right: 40px;
+  top: 0;
+  width: min(55%, 360px);
+}
+
+.faqImageTwo {
+  left: 20px;
+  top: 170px;
+  width: min(48%, 340px);
+}
+
+.faqImageThree {
+  bottom: 0;
+  right: 0;
+  width: min(52%, 360px);
+}
+
+.feedbackSection {
+  padding: 100px 0;
+}
+
+.feedbackGrid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 56px auto 0;
+  max-width: 970px;
+}
+
+.feedbackCard {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(13, 24, 43, 0.06);
+  padding: 38px;
+}
+
+.feedbackHead {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.feedbackHead img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.feedbackHead h3 {
+  color: #0d182b;
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 0 0 4px;
+}
+
+.feedbackHead span {
+  color: var(--integrity-grey);
+  font-weight: 600;
+}
+
+.feedbackCard p {
+  color: var(--integrity-grey);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 1199px) {
+  .serviceGrid,
+  .teamGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .introRow {
+    --intro-panel-height: 560px;
+  }
+
+  .consultImageGroup {
+    margin-bottom: 40px;
+  }
+
+  .introTextPanel {
+    min-height: auto;
+  }
+
+  .ctaBox {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .faqCollage {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .introSection,
+  .servicesSection,
+  .teamSection,
+  .faqSection,
+  .feedbackSection {
+    padding: 70px 0;
+  }
+
+  .ctaSection {
+    padding: 70px 0;
+  }
+
+  .consultImageGroup {
+    min-height: 510px;
+  }
+
+  .consultImageGroup::before {
+    left: 8px;
+    top: 66px;
+    width: 50%;
+  }
+
+  .consultImageGroup::after {
+    inset: 22px 18px 24px auto;
+    width: 54%;
+  }
+
+  .leftIntroImage {
+    bottom: 42px;
+    height: 350px;
+    left: 0;
+    width: 58%;
+  }
+
+  .rightIntroImage {
+    height: 470px;
+    left: auto;
+    right: 0;
+    transform: none;
+    width: 54%;
+  }
+
+  .playBadge {
+    bottom: 90px;
+    left: 43%;
+  }
+
+  .serviceGrid,
+  .teamGrid,
+  .feedbackGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .serviceGrid {
+    gap: 58px;
+  }
+
+  .serviceOverlay {
+    padding: 0 26px 64px;
+  }
+
+  .ctaBox {
+    padding: 42px 28px;
+  }
+
+  .teamImage {
+    height: 420px;
+  }
+
+  .faqItem summary {
+    align-items: flex-start;
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .faqItem p {
+    padding: 0 20px 22px;
+  }
+}
+
+@media (max-width: 430px) {
+  .aboutPage :global(.title) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .consultImageGroup {
+    min-height: 430px;
+  }
+
+  .consultImageGroup::before {
+    top: 48px;
+    width: 54%;
+  }
+
+  .leftIntroImage {
+    bottom: 36px;
+    height: 292px;
+    width: 60%;
+  }
+
+  .rightIntroImage {
+    height: 398px;
+    width: 52%;
+  }
+
+  .playBadge {
+    bottom: 68px;
+    height: 72px;
+    left: 43%;
+    width: 72px;
+  }
+
+  .feedbackCard {
+    padding: 28px 22px;
+  }
+
+  .serviceOverlay p {
+    max-height: 76px;
+  }
+
+  .faqCollage {
+    min-height: 420px;
+  }
+}

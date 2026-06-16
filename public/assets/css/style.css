@@ -13804,19 +13804,20 @@ body.sal-disabled [data-sal|=flip] {
 }
 
 .header-main-one .thumbnail a {
-  padding: 36px 0;
+  padding: 24px 0;
   display: block;
   max-width: max-content;
 }
 .header-main-one .thumbnail a img.integrity-header-logo-img {
-  width: 300px;
-  max-width: 300px;
-  height: auto;
+  width: 248px;
+  max-width: 248px;
+  height: 54px;
+  object-fit: contain;
   display: block;
-  margin-left: -44px;
+  margin-left: -20px;
 }
 img.integrity-sidebar-logo-img {
-  width: 280px;
+  width: 200px;
   max-width: 100%;
   height: auto;
 }
@@ -13831,19 +13832,23 @@ img.integrity-sidebar-logo-img {
     margin-left: 12px;
   }
   .header-one .header-main-one .thumbnail a img.integrity-header-logo-img {
-    width: 260px;
-    max-width: 260px;
-    margin-left: -36px;
+    width: 220px;
+    max-width: 220px;
+    height: 48px;
+    object-fit: contain;
+    margin-left: -15px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .header-main-one .thumbnail a {
-    padding: 24px 0;
+    padding: 20px 0;
   }
   .header-main-one .thumbnail a img.integrity-header-logo-img {
-    width: 240px;
-    max-width: 240px;
-    margin-left: -24px;
+    width: 190px;
+    max-width: 190px;
+    height: 41px;
+    object-fit: contain;
+    margin-left: -10px;
   }
   .header-one .main-header .button-area {
     justify-content: flex-end;
@@ -13852,12 +13857,14 @@ img.integrity-sidebar-logo-img {
 }
 @media only screen and (max-width: 767px) {
   .header-main-one .thumbnail a {
-    padding: 18px 0;
+    padding: 16px 0;
   }
   .header-main-one .thumbnail a img.integrity-header-logo-img {
-    width: 190px;
-    max-width: 190px;
-    margin-left: -6px;
+    width: 160px;
+    max-width: 160px;
+    height: 35px;
+    object-fit: contain;
+    margin-left: -5px;
   }
   .header-one .main-header .button-area .quote-btn {
     display: none;
@@ -13865,12 +13872,14 @@ img.integrity-sidebar-logo-img {
 }
 @media only screen and (max-width: 479px) {
   .header-main-one .thumbnail a {
-    padding: 14px 0;
+    padding: 12px 0;
   }
   .header-main-one .thumbnail a img.integrity-header-logo-img {
-    width: 158px;
-    max-width: 158px;
-    margin-left: -2px;
+    width: 130px;
+    max-width: 130px;
+    height: 28px;
+    object-fit: contain;
+    margin-left: 0;
   }
   .header-one .main-header .button-area {
     margin: 8px 0;

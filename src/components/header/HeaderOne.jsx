@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from './Nav';
 import SideMenu from './SideMenu';
 import Link from 'next/link';
+import Image from 'next/image';
 import { site } from '@/data/siteContent';
 function HeaderOne() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -111,7 +112,14 @@ function HeaderOne() {
                             <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                                 <div className="thumbnail">
                                     <Link href={'/'} >
-                                        <img className="integrity-header-logo-img" src={site.logo} alt={`${site.name} logo`} />
+                                        <Image
+                                          className="integrity-header-logo-img"
+                                          src={site.logo}
+                                          alt={`${site.name} logo`}
+                                          width={320}
+                                          height={88}
+                                          priority
+                                        />
                                     </Link>
                                 </div>
                             </div>

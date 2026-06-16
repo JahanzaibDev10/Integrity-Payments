@@ -8,3 +8,4 @@ export const metadata = {
 export default function FourOhOneKPage() {
   return <IntegrityPage slug="401-k" />;
 }
+

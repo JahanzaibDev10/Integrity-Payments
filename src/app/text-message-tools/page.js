@@ -1,10 +1,12 @@
-import IntegrityPage from "@/components/integrity/IntegrityPage";
+import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Text Message Tools",
-  description: "Text-to-pay, text invoicing, text-to-give, donation, and text marketing tools from Resilient Payments.",
+  title: "401 K",
+  description:
+    "Resilient Payments retirement plan support including traditional 401(k), Roth 401(k), Safe Harbor, and profit-sharing options.",
 };
 
 export default function Page() {
-  return <IntegrityPage slug="text-message-tools" />;
+  redirect("/401-k");
 }
+
