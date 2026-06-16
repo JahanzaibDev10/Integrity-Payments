@@ -43,45 +43,7 @@ function AboutOne() {
                                     </div>
                                 </div>
                                 {/* start about success area */}
-                                {/* about founder & get in touch start */}
-                                <div className="row about-founder-wrapper align-items-center mt--40">
-                                    {/* left area start */}
-                                    <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <div className="author-inner">
-                                            <a className="thumbnail" href="#">
-                                                <img
-                                                    src="/images/integrity-payments/logo.png"
-                                                    alt={`${site.name} logo`}
-                                                />
-                                            </a>
-                                            <div className="founder-details">
-                                                <a href="team-details.html">
-                                                    <h6 className="title">{site.name}</h6>
-                                                </a>
-                                                <span>National Business Consultants</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* left area end */}
-                                    {/* right founder area */}
-                                    <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_sm--20">
-                                        <div className="author-call-option">
-                                            <img
-                                                className="authore-call"
-                                                src="assets/images/about/call.svg"
-                                                alt="call_founder"
-                                            />
-                                            <div className="call-details">
-                                                <span>Call us anytime</span>
-                                                <a href={site.phoneHref}>
-                                                    <h6 className="title">{site.phone}</h6>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* left founder area */}
-                                </div>
-                                {/* about founder & get in touch end */}
+
                             </div>
                         </div>
                         {/* about right */}
@@ -89,14 +51,13 @@ function AboutOne() {
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-md-1 order-sm-1 order-1">
                             <div className="about-one-thumbnail">
                                 <img
-                                    src="/images/integrity-payments/home/advisor-pointing.png"
-                                    alt="Business advisor pointing upward"
+                                    src="/images/integrity-payments/home/businessman-portrait.png"
+                                    alt="Resilient Payments business professional"
                                 />
                                 <img
                                     className="small-img"
                                     src="/images/integrity-payments/home/payment-smartphone.jpg"
                                     alt="Secure mobile payment acceptance"
-                                    style={{ left: "auto", right: "-32px", top: "7%" }}
                                 />
                                 <div className="experience">
                                     <div className="left single">

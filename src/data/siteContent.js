@@ -24,19 +24,20 @@ export const site = {
 };
 
 export const navigation = [
+  { label: "Home", href: "/" },
   {
     label: "Services",
     href: "/products",
     children: [
-      { label: "All Services", href: "/products" },
       { label: "Payments", href: "/payments" },
-      { label: "Payroll & HR", href: "/payroll" },
+      { label: "POS Systems", href: "/pos-systems" },
+      { label: "Payroll", href: "/payroll" },
       { label: "Lending", href: "/lending" },
-      { label: "The CHAMP Plan", href: "/champ" },
+      { label: "The Champ Plan", href: "/champ" },
       { label: "401 K", href: "/401-k" },
-      { label: "Website Development", href: "/web-development" },
-      { label: "ATM machines", href: "/atm" },
+      { label: "ATM Machines", href: "/atm" },
       { label: "Business Insurance", href: "/business-insurance" },
+      { label: "Website Development & SEO", href: "/web-development" },
     ],
   },
   {
@@ -52,7 +53,7 @@ export const navigation = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const productLinks = navigation[0].children.filter(item => item.label !== "All Products");
+export const productLinks = navigation.find(item => item.label === "Services")?.children?.filter(item => item.label !== "All Products") ?? [];
 
 export const home = {
   slides: [
@@ -279,7 +280,7 @@ export const products = [
     summary:
       "Coverage support for liability, property, commercial auto, EPLI, employee benefits, workers comp, cyber, and more.",
     bullets: ["Liability", "Property", "Commercial Auto", "EPLI", "Employee benefits"],
-    icon: "assets/images/service/icon/08.svg",
+    icon: "assets/images/service/icon/14.svg",
     image: "/images/integrity-payments/hero/business-insurance.jpg",
   },
   {
@@ -288,7 +289,7 @@ export const products = [
     summary:
       "Website starter packages through advanced eCommerce builds, hosting, newsletters, live chat, SEO, and digital marketing services.",
     bullets: ["Website starter packages", "Shopping Carts", "eCommerce", "Hosting", "SEO", "Live Chat"],
-    icon: "assets/images/service/icon/08.svg",
+    icon: "assets/images/service/icon/15.svg",
     image: "/images/integrity-payments/hero/website-development.jpg",
   },
 ];
@@ -323,6 +324,24 @@ export const testimonials = [
       "The pay-by-text processing is a very robust solution that our patients absolutely love. It offered our patients a better way to communicate while saving our staff time.",
     name: "Michelle Wilkinson",
     company: "Sparrow Psychological Services",
+  },
+];
+
+export const teamMembers = [
+  {
+    name: "James Reville",
+    role: "Resilient Payments Agent",
+    image: "/assets/images/team/tm/lg-01.jpg",
+  },
+  {
+    name: "Theresa Hairston",
+    role: "Resilient Payments Agent",
+    image: "/assets/images/team/tm/lg-02.jpg",
+  },
+  {
+    name: "Payments Consulting Team",
+    role: "Business Solutions",
+    image: "/assets/images/team/tm/lg-03.jpg",
   },
 ];
 

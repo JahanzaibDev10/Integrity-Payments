@@ -10,7 +10,15 @@ function Nav() {
                 <ul className="mainmenu">
                     {navigation.map((item) => (
                         <li className={item.children?.length ? "has-droupdown" : ""} key={item.href}>
-                            <Link className={item.children?.length ? "nav-link" : "nav-item"} href={item.href}>
+                            <Link 
+                                className={item.children?.length ? "nav-link" : "nav-item"} 
+                                href={item.children?.length ? "#" : item.href}
+                                onClick={(e) => {
+                                    if (item.children?.length) {
+                                        e.preventDefault();
+                                    }
+                                }}
+                            >
                                 {item.label}
                             </Link>
                             {item.children?.length ? (

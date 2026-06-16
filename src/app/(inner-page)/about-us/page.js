@@ -154,19 +154,19 @@ export default function AboutUsPage() {
               <div className={`col-lg-6 ${styles.introImageColumn}`}>
                 <div className={styles.consultImageGroup}>
                   <Image
-                    src="/images/integrity-payments/home/payment-smartphone.jpg"
-                    alt="Resilient Payments customer payment support"
+                    src="/images/integrity-payments/home/business-brainstorming.jpg"
+                    alt="Resilient Payments business consultation"
                     width={390}
                     height={500}
                     className={styles.leftIntroImage}
-                    priority
                   />
                   <Image
-                    src="/images/integrity-payments/home/business-brainstorming.jpg"
-                    alt="Resilient Payments business consultation"
+                    src="/images/integrity-payments/home/businessman-portrait.png"
+                    alt="Resilient Payments business professional"
                     width={330}
                     height={460}
                     className={styles.rightIntroImage}
+                    priority
                   />
                   <div className={styles.playBadge}>
                     <i className="fas fa-play" />
@@ -264,7 +264,7 @@ export default function AboutUsPage() {
             <span className={styles.bigWatermark}>Members</span>
             <div className="row">
               <div className="col-12">
-                <div className="rts-title-area team text-center">
+                <div className="rts-title-area text-center">
                   <p className="pre-title">Professionals Team</p>
                   <h2 className="title">Professionals Team</h2>
                 </div>
@@ -356,7 +356,7 @@ export default function AboutUsPage() {
             <span className={styles.bigWatermark}>Testimonial</span>
             <div className="row">
               <div className="col-12">
-                <div className="rts-title-area reviews text-center">
+                <div className="rts-title-area text-center">
                   <p className="pre-title">CUSTOMER TRUST</p>
                   <h2 className="title">Built On Integrity, Experience, And Support</h2>
                 </div>

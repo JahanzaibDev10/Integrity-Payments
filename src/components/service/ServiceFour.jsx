@@ -26,6 +26,9 @@ function ServiceFour() {
                                         />
                                     </Link>
                                     <div className="content">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/05.svg" alt="Insurance_icon" />
+                                        </div>
                                         <h5 className="title">Personal Insurance</h5>
                                         <p className="disc">
                                             Commodo gravida quamta sodales pulvinar habitant tristique
@@ -51,6 +54,9 @@ function ServiceFour() {
                                         />
                                     </Link>
                                     <div className="content">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/06.svg" alt="Insurance_icon" />
+                                        </div>
                                         <h5 className="title">Home Insurance</h5>
                                         <p className="disc">
                                             Commodo gravida quamta sodales pulvinar habitant tristique
@@ -76,6 +82,9 @@ function ServiceFour() {
                                         />
                                     </Link>
                                     <div className="content">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/07.svg" alt="Insurance_icon" />
+                                        </div>
                                         <h5 className="title">Financial Insurance</h5>
                                         <p className="disc">
                                             Commodo gravida quamta sodales pulvinar habitant tristique

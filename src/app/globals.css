@@ -181,6 +181,58 @@ nextjs-portal {
   margin-bottom: 24px;
 }
 
+.integrity-home-contact-section {
+  padding: 95px 0;
+}
+
+.integrity-home-contact-section .container {
+  max-width: 1240px;
+}
+
+.integrity-home-contact-card {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 24px 60px rgba(28, 37, 57, 0.12);
+}
+
+.integrity-home-contact-section .contact-image-one,
+.integrity-home-contact-section .contact-image-one img,
+.integrity-home-contact-section .contact-form-area-one {
+  height: 100%;
+  min-height: 640px;
+}
+
+.integrity-home-contact-section .contact-image-one img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.integrity-home-contact-section .contact-form-area-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 78px 88px;
+}
+
+.integrity-home-contact-section .contact-form-area-one form {
+  margin-top: 34px;
+}
+
+.integrity-home-contact-section .contact-form-area-one form input {
+  height: 62px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.integrity-home-contact-section .contact-form-area-one form textarea {
+  min-height: 180px;
+  border-radius: 10px;
+  font-size: 15px;
+  resize: vertical;
+}
+
 .integrity-service-copy .title,
 .integrity-page-title .title {
   letter-spacing: 0;
@@ -207,10 +259,54 @@ nextjs-portal {
   margin-bottom: 16px;
 }
 
+.integrity-products-full-grid > [class*="col-"] {
+  display: flex;
+}
+
+.integrity-products-full-grid .service-details-card {
+  width: 100%;
+  min-height: 250px;
+  margin: 0;
+  padding: 24px 18px;
+  border: 1px solid rgba(28, 37, 57, 0.08);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 6px;
+  box-shadow: 0 14px 35px rgba(28, 37, 57, 0.06);
+}
+
+.integrity-products-full-grid .service-details-card .thumbnail {
+  width: 34px;
+  min-width: 34px;
+  margin-right: 12px;
+}
+
+.integrity-products-full-grid .service-details-card .thumbnail img.icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.integrity-products-full-grid .service-details-card .details .title {
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.integrity-products-full-grid .service-details-card .details p {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.integrity-products-full-grid .rts-read-more {
+  font-size: 13px;
+}
+
 .integrity-business-goal-image {
+  position: relative;
   width: 100%;
   height: 100%;
-  min-height: 520px;
+  min-height: 560px;
   display: flex;
   align-items: center;
   background: #ffffff;
@@ -221,17 +317,226 @@ nextjs-portal {
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 520px;
-  object-fit: contain;
-  object-position: center center;
+  min-height: 560px;
+  object-fit: cover;
+  object-position: right center;
+  transform: scale(1.24);
+  transform-origin: right center;
+}
+
+.integrity-home-team-section {
+  margin-bottom: 90px;
+}
+
+.integrity-consultancy-card {
+  border-radius: 8px;
+  box-shadow: 0 22px 55px rgba(28, 37, 57, 0.14);
+}
+
+.integrity-consultancy-card::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(4, 24, 52, 0) 45%, rgba(4, 24, 52, 0.68) 100%);
+  pointer-events: none;
+}
+
+.integrity-consultancy-label {
+  position: absolute;
+  left: 32px;
+  bottom: 30px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  min-height: 58px;
+  padding: 14px 26px;
+  border-radius: 8px;
+  background: #e00a0a;
+  box-shadow: 0 16px 35px rgba(224, 10, 10, 0.28);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
 }
 
 .business-goal-right {
   width: 100%;
-  min-height: 520px;
+  min-height: 560px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .business-goal-right .pl--30 {
+    padding-left: 18px;
+  }
+
+  .business-goal-right .goal-button-wrapper.mt--70 {
+    margin-top: 50px;
+  }
+}
+
+.integrity-feature-equal-row {
+  align-items: stretch;
+}
+
+.integrity-feature-equal-row > [class*="col-"] {
+  min-height: 520px;
+}
+
+.integrity-feature-equal-row .feature-left-area,
+.integrity-feature-copy-card {
+  width: 100%;
+  min-height: 520px;
+  border-radius: 8px;
+}
+
+.integrity-feature-equal-row .feature-left-area {
+  padding-right: 0;
+  overflow: hidden;
+  animation: none;
+}
+
+.integrity-feature-equal-row .feature-left-area img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.integrity-feature-copy-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 46px 24px;
+  background: #ffffff;
+}
+
+.integrity-gallery-equal-slide {
+  align-items: stretch;
+}
+
+.integrity-gallery-equal-slide > [class*="col-"] {
+  min-height: 350px;
+}
+
+.integrity-gallery-equal-slide .thumbnail-gallery,
+.integrity-gallery-equal-slide .bg-right-gallery {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.integrity-gallery-equal-slide .thumbnail-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  margin-top: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.integrity-gallery-equal-slide .bg-right-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 42px;
+  background-size: cover;
+}
+
+.integrity-gallery-equal-slide .bg-right-gallery .icon {
+  margin-top: 0;
+}
+
+.integrity-gallery-equal-slide .bg-right-gallery .title {
+  margin-top: 26px;
+}
+
+.integrity-gallery-equal-slide .bg-right-gallery p.disc {
+  margin-bottom: 28px;
+}
+
+.integrity-home-testimonial-page {
+  min-height: 760px;
+  padding: 110px 0 95px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.integrity-home-testimonial-page .container {
+  max-width: 1240px;
+}
+
+.integrity-home-testimonial-copy {
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  max-width: 690px;
+}
+
+.integrity-home-testimonial-copy .pre-title {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.integrity-home-testimonial-copy .title {
+  font-size: 58px;
+  line-height: 1.05;
+  margin-bottom: 28px;
+}
+
+.integrity-home-testimonial-copy .testimonial-inner p.disc {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.integrity-home-testimonial-copy .testimonial-bottom-one {
+  margin-top: 38px;
+}
+
+.integrity-home-testimonial-copy .testimonial-bottom-one .details .title {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.integrity-home-testimonial-page .rts-test-one-image-inner {
+  min-height: 560px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.integrity-home-testimonial-page .rts-test-one-image-inner > img {
+  width: min(100%, 470px);
+  max-height: 650px;
+  object-fit: contain;
+}
+
+.integrity-home-testimonial-page .mySwipertestimonial {
+  padding-bottom: 86px;
+}
+
+.integrity-home-testimonial-page .mySwipertestimonial .swiper-button-prev {
+  left: auto;
+  right: 92px;
+  bottom: 10px;
+  top: auto;
+}
+
+.integrity-home-testimonial-page .mySwipertestimonial .swiper-button-next {
+  right: 24px;
+  bottom: 10px;
+  top: auto;
 }
 
 .integrity-detail-block,
@@ -283,15 +588,93 @@ nextjs-portal {
 
 @media (max-width: 767px) {
   .integrity-business-goal-image {
-    min-height: 260px;
+    min-height: 320px;
   }
 
   .integrity-business-goal-image > img:first-child {
-    min-height: 260px;
+    min-height: 320px;
+    object-position: right center;
+    transform: scale(1.18);
+  }
+
+  .integrity-consultancy-label {
+    left: 18px;
+    bottom: 18px;
+    min-width: 170px;
+    min-height: 48px;
+    padding: 12px 18px;
+    font-size: 18px;
   }
 
   .business-goal-right {
     min-height: auto;
+  }
+
+  .integrity-home-team-section {
+    margin-bottom: 54px;
+  }
+
+  .integrity-feature-equal-row > [class*="col-"],
+  .integrity-feature-equal-row .feature-left-area,
+  .integrity-feature-copy-card,
+  .integrity-feature-equal-row .feature-left-area img {
+    min-height: auto;
+  }
+
+  .integrity-feature-equal-row .feature-left-area img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .integrity-feature-copy-card {
+    padding: 32px 0 0;
+  }
+
+  .integrity-gallery-equal-slide > [class*="col-"],
+  .integrity-gallery-equal-slide .thumbnail-gallery,
+  .integrity-gallery-equal-slide .bg-right-gallery,
+  .integrity-gallery-equal-slide .thumbnail-gallery img {
+    min-height: auto;
+  }
+
+  .integrity-gallery-equal-slide .thumbnail-gallery img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .integrity-home-testimonial-page {
+    min-height: auto;
+    padding: 64px 0 50px;
+  }
+
+  .integrity-home-testimonial-copy {
+    max-width: 100%;
+  }
+
+  .integrity-home-testimonial-copy .title {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .integrity-home-testimonial-copy .testimonial-inner p.disc {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .integrity-home-testimonial-page .rts-test-one-image-inner {
+    min-height: auto;
+    margin-top: 24px;
+  }
+
+  .integrity-home-testimonial-page .rts-test-one-image-inner > img {
+    width: min(86%, 360px);
+  }
+
+  .integrity-home-testimonial-page .mySwipertestimonial {
+    padding-bottom: 72px;
+  }
+
+  .integrity-products-full-grid .service-details-card {
+    min-height: auto;
+    padding: 22px 18px;
   }
 
   .about-one-thumbnail > img:first-child {
@@ -329,5 +712,39 @@ nextjs-portal {
 
   .integrity-contact-map-panel h3 {
     font-size: 28px;
+  }
+
+  .integrity-home-contact-section {
+    padding: 56px 0;
+  }
+
+  .integrity-home-contact-card {
+    border-radius: 0;
+  }
+
+  .integrity-home-contact-section .contact-image-one,
+  .integrity-home-contact-section .contact-image-one img,
+  .integrity-home-contact-section .contact-form-area-one {
+    min-height: auto;
+  }
+
+  .integrity-home-contact-section .contact-image-one img {
+    aspect-ratio: 16 / 11;
+  }
+
+  .integrity-home-contact-section .contact-form-area-one {
+    padding: 34px 22px;
+  }
+
+  .integrity-home-contact-section .contact-form-area-one form {
+    margin-top: 24px;
+  }
+
+  .integrity-home-contact-section .contact-form-area-one form input {
+    height: 56px;
+  }
+
+  .integrity-home-contact-section .contact-form-area-one form textarea {
+    min-height: 150px;
   }
 }

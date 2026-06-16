@@ -13,11 +13,11 @@ function TestimonialOne() {
     return (
         <ErrorBoundary>
             <div>
-                <div className="rts-client-feedback">
+                <div className="rts-client-feedback integrity-home-testimonial-page">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-lg-7">
-                                <div className="rts-title-area reviews text-start pl--30 pt--70">
+                        <div className="row align-items-center">
+                            <div className="col-lg-7 col-md-12">
+                                <div className="rts-title-area reviews text-start pl--30 pt--70 integrity-home-testimonial-copy">
                                     <p className="pre-title">Our Testimonials</p>
                                     <h2 className="title">Client Feedback</h2>
                                     <div className="swiper mySwipertestimonial">
@@ -54,7 +54,7 @@ function TestimonialOne() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-5">
+                            <div className="col-lg-5 col-md-12">
                                 <div className="rts-test-one-image-inner">
                                     <img src="assets/images/testimonials/01.png" alt="" />
                                 </div>

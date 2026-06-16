@@ -9312,7 +9312,7 @@ body {
 }
 .rts-title-area::after {
   position: absolute;
-  content: "About Us";
+  content: "";
   left: -14%;
   top: -70%;
   color: #ffffff;
@@ -9417,7 +9417,7 @@ body {
   top: -20%;
 }
 .rts-title-area.business::after {
-  content: "Business Goal";
+  content: "";
   min-width: max-content;
   min-height: 120px;
   left: 67%;
@@ -19439,10 +19439,14 @@ body.thirteen-body .title-area span {
   justify-content: flex-end;
   position: relative;
 }
+.about-one-thumbnail img {
+  border-radius: 30px !important;
+}
 .about-one-thumbnail .small-img {
   position: absolute;
   left: 0%;
   top: 7%;
+  border: 8px solid #ffffff;
   animation: jump-1 10s linear infinite;
 }
 .about-one-thumbnail .experience {

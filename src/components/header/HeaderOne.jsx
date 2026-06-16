@@ -124,9 +124,9 @@ function HeaderOne() {
                                 </div>
                             </div>
                             <div className=" col-xl-9 col-lg-8 col-md-8 col-sm-8 col-8">
-                                <div className="main-header">
+                                <div className="main-header" style={{ justifyContent: 'flex-start' }}>
                                     <Nav />
-                                    <div className="button-area">
+                                    <div className="button-area" style={{ marginLeft: 'auto' }}>
                                         <button id="search" className="rts-btn btn-primary-alta" onClick={handleSearchClick}>
                                             <i className="far fa-search" />
                                         </button>

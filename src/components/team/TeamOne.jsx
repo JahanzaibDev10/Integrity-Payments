@@ -7,20 +7,18 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
-import { testimonials } from '@/data/siteContent';
-
-const images = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "04.jpg"];
+import { teamMembers } from '@/data/siteContent';
 
 function TeamOne() {
     return (
         <div>
-            <div className="rts-team-area rts-section-gap bg-team">
+            <div className="rts-team-area rts-section-gap bg-team integrity-home-team-section">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <div className="rts-title-area team text-center">
-                                <p className="pre-title">Testimonials</p>
-                                <h2 className="title">Businesses Using Resilient Payments</h2>
+                                <p className="pre-title">Our Team</p>
+                                <h2 className="title">Meet the Resilient Payments Team</h2>
                             </div>
                         </div>
                     </div>
@@ -29,26 +27,25 @@ function TeamOne() {
                             modules={[Navigation, Scrollbar, A11y, Autoplay]}
                             className="mySwiperh1_team"
                             speed={1500}
-                            slidesPerView={4}
+                            slidesPerView={3}
                             spaceBetween={30}
                             loop={true}
                             autoplay={true}
                             navigation={{ nextEl: '.rts-next', prevEl: '.rts-prev' }}
                             breakpoints={{
-                                1200: { slidesPerView: 4 },
-                                900: { slidesPerView: 3 },
+                                1200: { slidesPerView: 3 },
+                                900: { slidesPerView: 2 },
                                 768: { slidesPerView: 2 },
-                                580: { slidesPerView: 2 },
-                                450: { slidesPerView: 1 },
+                                580: { slidesPerView: 1 },
                                 0: { slidesPerView: 1 },
                             }}
                         >
-                            {testimonials.map((item, index) => (
-                                <SwiperSlide key={`${item.name}-${item.company}`}>
+                            {teamMembers.map((member) => (
+                                <SwiperSlide key={member.name}>
                                     <div className="team-single-one-start">
                                         <div className="team-image-area">
-                                            <Link href="/testimonials">
-                                                <img src={`assets/images/team/tm/${images[index % images.length]}`} alt="" />
+                                            <Link href="/about-us">
+                                                <img src={member.image} alt={member.name} />
                                                 <div className="team-social">
                                                     <div className="main">
                                                         <i className="fal fa-plus" />
@@ -62,10 +59,10 @@ function TeamOne() {
                                             </Link>
                                         </div>
                                         <div className="single-details">
-                                            <Link href="/testimonials">
-                                                <h5 className="title">{item.name}</h5>
+                                            <Link href="/about-us">
+                                                <h5 className="title">{member.name}</h5>
                                             </Link>
-                                            <p>{item.company}</p>
+                                            <p>{member.role}</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -79,4 +76,3 @@ function TeamOne() {
 }
 
 export default TeamOne
-

@@ -58,13 +58,7 @@
 }
 
 .consultImageGroup::after {
-  background: rgba(27, 58, 142, 0.06);
-  border-radius: 8px;
-  content: "";
-  inset: 28px 52px 28px auto;
-  position: absolute;
-  width: 48%;
-  z-index: 0;
+  display: none;
 }
 
 .leftIntroImage,
@@ -78,7 +72,7 @@
 
 .leftIntroImage {
   border: 8px solid #ffffff;
-  border-radius: 8px;
+  border-radius: 30px;
   bottom: 54px;
   box-shadow: 0 24px 55px rgba(13, 24, 43, 0.16);
   height: 380px;
@@ -89,7 +83,7 @@
 }
 
 .rightIntroImage {
-  border-radius: 8px;
+  border-radius: 30px;
   box-shadow: 0 24px 65px rgba(13, 24, 43, 0.14);
   height: calc(var(--intro-panel-height) - 32px);
   left: auto;

@@ -13,29 +13,26 @@ export default function DropdownMenu({ item, open, onToggle }) {
     );
   }
 
+  const handleMainLinkClick = (e) => {
+    e.preventDefault();
+    onToggle();
+  };
+
   return (
     <div className="integrity-dropdown">
-      <Link
+      <button
         className="integrity-nav-link integrity-nav-link-dropdown"
-        href={item.href}
+        onClick={handleMainLinkClick}
         aria-haspopup="true"
         aria-expanded={open}
+        type="button"
       >
         {item.label}
         <span aria-hidden="true" className="integrity-chevron">
           ▾
         </span>
-      </Link>
-      <button
-        className="integrity-mobile-submenu-toggle"
-        type="button"
-        aria-label={`Toggle ${item.label} menu`}
-        aria-expanded={open}
-        onClick={onToggle}
-      >
-        <span aria-hidden="true">{open ? "−" : "+"}</span>
       </button>
-      <div className="integrity-dropdown-panel" role="menu">
+      <div className="integrity-dropdown-panel" role="menu" hidden={!open}>
         {item.children.map((child) => (
           <Link key={child.href} className="integrity-dropdown-link" href={child.href} role="menuitem">
             {child.label}

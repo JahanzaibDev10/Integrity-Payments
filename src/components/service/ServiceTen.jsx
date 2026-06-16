@@ -16,6 +16,9 @@ function ServiceTen() {
                                 </Link>
                                 <div className="body-content">
                                     <div className="hidden-area">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/08.svg" alt="Service_icon" />
+                                        </div>
                                         <h5 className="title">Strategy Growth</h5>
                                         <p className="dsic">
                                             Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula
@@ -41,6 +44,9 @@ function ServiceTen() {
                                 </Link>
                                 <div className="body-content">
                                     <div className="hidden-area">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/09.svg" alt="Service_icon" />
+                                        </div>
                                         <h5 className="title">Grow Business</h5>
                                         <p className="dsic">
                                             Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula
@@ -66,6 +72,9 @@ function ServiceTen() {
                                 </Link>
                                 <div className="body-content">
                                     <div className="hidden-area">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/10.svg" alt="Service_icon" />
+                                        </div>
                                         <h5 className="title">Proudly Speech</h5>
                                         <p className="dsic">
                                             Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula
@@ -91,6 +100,9 @@ function ServiceTen() {
                                 </Link>
                                 <div className="body-content">
                                     <div className="hidden-area">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/11.svg" alt="Service_icon" />
+                                        </div>
                                         <h5 className="title">Model Building</h5>
                                         <p className="dsic">
                                             Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula
@@ -116,6 +128,9 @@ function ServiceTen() {
                                 </Link>
                                 <div className="body-content">
                                     <div className="hidden-area">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/12.svg" alt="Service_icon" />
+                                        </div>
                                         <h5 className="title">Solution Model</h5>
                                         <p className="dsic">
                                             Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula
@@ -141,6 +156,9 @@ function ServiceTen() {
                                 </Link>
                                 <div className="body-content">
                                     <div className="hidden-area">
+                                        <div className="icon">
+                                            <img src="assets/images/service/icon/13.svg" alt="Service_icon" />
+                                        </div>
                                         <h5 className="title">Finbiz Solution</h5>
                                         <p className="dsic">
                                             Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula

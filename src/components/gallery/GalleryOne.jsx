@@ -39,13 +39,13 @@ function GalleryOne() {
                                     >
                                         {featured.map((item, index) => (
                                             <SwiperSlide key={item.href}>
-                                                <div className="row g-5 w-g-100">
-                                                    <div className="col-lg-7 col-md-12 col-sm-12 col-12">
+                                                <div className="row g-5 w-g-100 integrity-gallery-equal-slide">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12 d-flex">
                                                         <div className="thumbnail-gallery">
                                                             <img src={item.image} alt={item.title} />
                                                         </div>
                                                     </div>
-                                                    <div className="col-lg-5 col-md-12 col-sm-12 col-12">
+                                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12 d-flex">
                                                         <div className="bg-right-gallery">
                                                             <div className="icon">
                                                                 <img src="assets/images/gallery/icon/01.svg" alt="" />

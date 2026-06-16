@@ -21,6 +21,9 @@ function ServiceTwo() {
                                     <img src="assets/images/service/10.jpg" alt="Service_image" />
                                 </Link>
                                 <div className="body">
+                                    <div className="icon">
+                                        <img src="assets/images/service/icon/01.svg" alt="Service_icon" />
+                                    </div>
                                     <Link href={'/service-details'}>
                                         <h5 className="title">Business Solution</h5>
                                     </Link>
@@ -42,6 +45,9 @@ function ServiceTwo() {
                                     <img src="assets/images/service/11.jpg" alt="Service_image" />
                                 </Link>
                                 <div className="body">
+                                    <div className="icon">
+                                        <img src="assets/images/service/icon/02.svg" alt="Service_icon" />
+                                    </div>
                                     <Link href={'/service-details'}>
                                         <h5 className="title">Creative Ideas</h5>
                                     </Link>
@@ -63,6 +69,9 @@ function ServiceTwo() {
                                     <img src="assets/images/service/12.jpg" alt="Service_image" />
                                 </Link>
                                 <div className="body">
+                                    <div className="icon">
+                                        <img src="assets/images/service/icon/03.svg" alt="Service_icon" />
+                                    </div>
                                     <Link href={'/service-details'}>
                                         <h5 className="title">Market Research</h5>
                                     </Link>
@@ -84,6 +93,9 @@ function ServiceTwo() {
                                     <img src="assets/images/service/13.jpg" alt="Service_image" />
                                 </Link>
                                 <div className="body">
+                                    <div className="icon">
+                                        <img src="assets/images/service/icon/04.svg" alt="Service_icon" />
+                                    </div>
                                     <Link href={'/service-details'}>
                                         <h5 className="title">Best Solution</h5>
                                     </Link>

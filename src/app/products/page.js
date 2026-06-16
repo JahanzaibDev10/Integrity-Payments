@@ -107,69 +107,6 @@ export default function Page() {
                     ))}
                   </div>
 
-                  <div className="row g-5">
-                    {products.map((service) => (
-                      <div className="col-lg-6" key={service.title}>
-                        <article className="service-details-card">
-                          <div className="thumbnail">
-                            <img src={service.icon} alt="" className="icon" />
-                          </div>
-                          <div className="details">
-                            <h6 className="title">{service.title}</h6>
-                            <p className="disc">{service.summary}</p>
-                            <Link className="rts-read-more btn-primary" href={service.href}>
-                              <i className="far fa-arrow-right" />
-                              Learn More
-                            </Link>
-                          </div>
-                        </article>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="service-detials-step-2 mt--40">
-                  <h4 className="title">3 Simple Steps to Find the Right Service Mix</h4>
-                  <p className="disc mb--25">
-                    Every business has a different mix of payment needs, staffing needs, capital needs, risk
-                    exposure, and customer expectations. Our process keeps the conversation practical so your
-                    services fit the way your team already works.
-                  </p>
-
-                  <div className="row mb--40 g-5 mb_md--20 mb_sm--20">
-                    {processSteps.map((step, index) => (
-                      <div className="col-lg-4 col-md-6 col-sm-12 col-12" key={step.title}>
-                        <div className="single-service-step text-center">
-                          <p className="step">{String(index + 1).padStart(2, "0")}</p>
-                          <h6 className="title">{step.title}</h6>
-                          <p className="disc">{step.description}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="service-detials-step-3 mt--70 mt_md--50">
-                  <div className="row g-5 align-items-center">
-                    <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
-                      <div className="thumbnail sm-thumb-service">
-                        <img src="/images/integrity-payments/hero/payments-payroll-perfect.jpg" alt="Payments and payroll support" />
-                      </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb_md--20 mb_sm--20">
-                      <h4 className="title">Customer Benefits</h4>
-                      <p className="disc">
-                        Resilient Payments is built for owners who want clear options, dependable service, and
-                        business tools that help reduce operational headaches.
-                      </p>
-                      {benefits.map((benefit) => (
-                        <div className="single-banifits" key={benefit}>
-                          <i className="far fa-check-circle" />
-                          <span>{benefit}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -230,6 +167,74 @@ export default function Page() {
                     <Link className="rts-btn btn-primary" href="/contact">
                       Contact Us
                     </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12">
+                <div className="row g-4 integrity-products-full-grid mt--40">
+                  {products.map((service) => (
+                    <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12" key={service.title}>
+                      <article className="service-details-card">
+                        <div className="thumbnail">
+                          <img src={service.icon} alt="" className="icon" />
+                        </div>
+                        <div className="details">
+                          <h6 className="title">{service.title}</h6>
+                          <p className="disc">{service.summary}</p>
+                          <Link className="rts-read-more btn-primary" href={service.href}>
+                            <i className="far fa-arrow-right" />
+                            Learn More
+                          </Link>
+                        </div>
+                      </article>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="col-12">
+                <div className="service-detials-step-2 mt--40">
+                  <h4 className="title">3 Simple Steps to Find the Right Service Mix</h4>
+                  <p className="disc mb--25">
+                    Every business has a different mix of payment needs, staffing needs, capital needs, risk
+                    exposure, and customer expectations. Our process keeps the conversation practical so your
+                    services fit the way your team already works.
+                  </p>
+
+                  <div className="row mb--40 g-5 mb_md--20 mb_sm--20">
+                    {processSteps.map((step, index) => (
+                      <div className="col-lg-4 col-md-6 col-sm-12 col-12" key={step.title}>
+                        <div className="single-service-step text-center">
+                          <p className="step">{String(index + 1).padStart(2, "0")}</p>
+                          <h6 className="title">{step.title}</h6>
+                          <p className="disc">{step.description}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="service-detials-step-3 mt--70 mt_md--50">
+                  <div className="row g-5 align-items-center">
+                    <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div className="thumbnail sm-thumb-service">
+                        <img src="/images/integrity-payments/hero/payments-payroll-perfect.jpg" alt="Payments and payroll support" />
+                      </div>
+                    </div>
+                    <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb_md--20 mb_sm--20">
+                      <h4 className="title">Customer Benefits</h4>
+                      <p className="disc">
+                        Resilient Payments is built for owners who want clear options, dependable service, and
+                        business tools that help reduce operational headaches.
+                      </p>
+                      {benefits.map((benefit) => (
+                        <div className="single-banifits" key={benefit}>
+                          <i className="far fa-check-circle" />
+                          <span>{benefit}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
