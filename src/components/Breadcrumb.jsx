@@ -11,14 +11,16 @@ const Breadcrumb = ({ title, breadcrumbs }) => {
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div className="bread-tag">
                             {breadcrumbs.map((breadcrumb, index) => (
-                                <span key={index}>
+                                <React.Fragment key={index}>
                                     {breadcrumb.link ? (
                                         <a href={breadcrumb.link}>{breadcrumb.label}</a>
                                     ) : (
                                         <span className="active">{breadcrumb.label}</span>
                                     )}
-                                    {index < breadcrumbs.length - 1 && <span> / </span>}
-                                </span>
+                                    {index < breadcrumbs.length - 1 && (
+                                        <span className="separator" aria-hidden="true"> / </span>
+                                    )}
+                                </React.Fragment>
                             ))}
                         </div>
                     </div>

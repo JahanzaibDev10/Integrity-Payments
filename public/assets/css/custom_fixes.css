@@ -1,0 +1,20 @@
+/* Custom Fixes */
+.single-counter .counter-details .title span::after {
+    content: none !important;
+}
+
+@media (max-width: 575px) {
+    .rts-breadcrumb-area .bread-tag {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        border-radius: 15px !important;
+        padding: 12px 20px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .about-one-thumbnail {
+        align-items: flex-end !important;
+        margin-bottom: -60px !important;
+    }
+}

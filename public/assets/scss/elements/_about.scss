@@ -88,6 +88,10 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
+    align-items: flex-end;
+    @media #{$sm-layout} {
+        margin-bottom: -60px;
+    }
 
     .small-img {
         position: absolute;
