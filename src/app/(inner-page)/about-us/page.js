@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FooterOne from "@/components/footer/FooterOne";
 import HeaderOne from "@/components/header/HeaderOne";
 import styles from "./about-us.module.css";
+import { testimonials } from "@/data/siteContent";
 
 export const metadata = {
   title: "About Us | Resilient Payments",
@@ -357,14 +358,14 @@ export default function AboutUsPage() {
             <div className="row">
               <div className="col-12">
                 <div className="rts-title-area text-center">
-                  <p className="pre-title">CUSTOMER TRUST</p>
+                  <p className="pre-title">TESTIMONIALS</p>
                   <h2 className="title">Built On Integrity, Experience, And Support</h2>
                 </div>
               </div>
             </div>
             <div className={styles.feedbackGrid}>
-              {[0, 1].map((item) => (
-                <article className={styles.feedbackCard} key={item}>
+              {testimonials.slice(0, 2).map((item, idx) => (
+                <article className={styles.feedbackCard} key={idx}>
                   <div className={styles.feedbackHead}>
                     <Image
                       src="/images/integrity-payments/logo.png"
@@ -373,14 +374,12 @@ export default function AboutUsPage() {
                       height={66}
                     />
                     <div>
-                      <h3>Resilient Payments</h3>
-                      <span>Business Solutions Partner</span>
+                      <h3>{item.name}</h3>
+                      <span>{item.company}</span>
                     </div>
                   </div>
                   <p>
-                    Resilient Payments is committed to earning your business and your
-                    trust every single day through honest guidance, reliable solutions,
-                    and customer-first support.
+                    {item.quote}
                   </p>
                 </article>
               ))}

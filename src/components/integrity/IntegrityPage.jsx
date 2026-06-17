@@ -65,18 +65,22 @@ export default function IntegrityPage({ slug }) {
                     if (displayCards.length === 0) return null;
 
                     return (
-                      <div className="row g-5 mt--30 mb--40">
+                      <div className="row g-5 mt--30 mb--40" style={{ alignItems: 'stretch' }}>
                         {displayCards.map((card) => {
                           const title = card.label || card.title || card;
                           return (
                             <div className="col-lg-6 col-md-6" key={title}>
-                              <article className="service-details-card h-100" style={{ padding: '30px', border: '1px solid #f1f1f1', borderRadius: '8px', background: '#fff' }}>
-                                {card.image ? (
+                              <article className="service-details-card" style={{ padding: '30px', border: '1px solid #f1f1f1', borderRadius: '8px', background: '#fff', height: '100%', minHeight: '420px', display: 'flex', flexDirection: 'column' }}>
+                                {card.icon ? (
+                                  <div className="icon-wrapper" style={{ marginBottom: '20px' }}>
+                                    <i className={card.icon} style={{ fontSize: '40px', color: '#1a56db' }}></i>
+                                  </div>
+                                ) : card.image ? (
                                   <div className="thumbnail">
                                     <img src={card.image} alt={title} className="icon" />
                                   </div>
                                 ) : null}
-                                <div className="details">
+                                <div className="details" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
                                   <h6 className="title">{title}</h6>
                                   {card.description ? <p className="disc">{card.description}</p> : null}
                                   {card.summary ? <p className="disc">{card.summary}</p> : null}
@@ -88,10 +92,12 @@ export default function IntegrityPage({ slug }) {
                                     </ul>
                                   ) : null}
                                   {card.href ? (
-                                    <Link className="rts-read-more btn-primary" href={card.href}>
-                                      <i className="far fa-arrow-right" />
-                                      Learn More
-                                    </Link>
+                                    <div style={{ marginTop: 'auto', paddingTop: '20px' }}>
+                                      <Link className="rts-read-more btn-primary" href={card.href}>
+                                        <i className="far fa-arrow-right" />
+                                        Learn More
+                                      </Link>
+                                    </div>
                                   ) : null}
                                 </div>
                               </article>

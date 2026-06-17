@@ -15780,8 +15780,9 @@ body.home-eleven #menu-btn:hover {
 }
 .rts-sidebar-menu-desktop .body-mobile .mainmenu > li {
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #f0f0f0;
   width: 100%;
 }
 .rts-sidebar-menu-desktop .body-mobile .mainmenu ul {

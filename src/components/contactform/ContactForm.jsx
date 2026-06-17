@@ -14,7 +14,7 @@ function ContactForm() {
                                 <div className="contact-form-area-one" style={{ padding: '60px 80px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                     <div className="rts-title-area text-center mb--40">
                                         <p className="pre-title" style={{ color: '#e00a0a', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px' }}>Contact Resilient Payments</p>
-                                        <h2 className="title" style={{ color: '#1c2539', fontSize: '36px', marginBottom: '24px' }}>Request a Free Consultation</h2>
+                                        <h2 className="title d-none d-md-block" style={{ color: '#1c2539', fontSize: '36px', marginBottom: '24px' }}>Request a Free Consultation</h2>
                                     </div>
                                     <div id="form-messages" />
                                     <form id="contact-form" action="mailer.php" method="post">
