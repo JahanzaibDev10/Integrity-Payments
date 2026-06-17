@@ -38,13 +38,13 @@ function ContactForm() {
                                             type="text" 
                                             placeholder="How can we help?" 
                                             name="subject" 
-                                            style={{ height: '62px', borderRadius: '10px', fontSize: '15px', marginTop: '34px' }} 
+                                            style={{ height: '62px', borderRadius: '10px', fontSize: '15px', marginBottom: '20px' }} 
                                         />
                                         <textarea
                                             placeholder={pageContent.contact.description}
                                             name="message"
                                             defaultValue={""}
-                                            style={{ minHeight: '180px', borderRadius: '10px', fontSize: '15px', resize: 'vertical', marginTop: '34px' }}
+                                            style={{ minHeight: '180px', borderRadius: '10px', fontSize: '15px', resize: 'vertical', marginBottom: '20px' }}
                                         />
                                         <div className="text-center mt--30">
                                             <button type="submit" className="rts-btn btn-primary" style={{ minWidth: '200px' }}>
