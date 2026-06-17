@@ -50,7 +50,6 @@ export const navigation = [
     ],
   },
   { label: "About Us", href: "/about-us" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export const productLinks = navigation.find(item => item.label === "Services")?.children?.filter(item => item.label !== "All Products") ?? [];

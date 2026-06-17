@@ -63,11 +63,11 @@ function SideMenu({ isSidebarOpen, toggleSidebar }) {
                                         ) : null}
                                     </li>
                                 ))}
+                                <li className="menu-item">
+                                    <Link className="menu-link" href="/contact" onClick={toggleSidebar}>Contact</Link>
+                                </li>
                             </ul>
                         </nav>
-                        <Link href="/contact" className="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">
-                            Contact Us
-                        </Link>
                     </div>
                 </div>
             </div>

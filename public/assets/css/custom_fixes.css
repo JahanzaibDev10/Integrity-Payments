@@ -18,3 +18,13 @@
         margin-bottom: -60px !important;
     }
 }
+
+.about-testimonials-carousel-wrapper { position: relative; padding-top: 50px; }
+.about-carousel-nav { position: absolute; top: 0; right: 0; display: flex; gap: 10px; z-index: 10; }
+.about-swiper-button-prev, .about-swiper-button-next { width: 40px; height: 40px; border-radius: 50%; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; cursor: pointer; color: #1c2539; transition: 0.3s; }
+.about-swiper-button-prev:hover, .about-swiper-button-next:hover { background: #e5322c; color: #fff; }
+@media (min-width: 992px) { .about-testimonials-carousel-wrapper { padding-right: 60px; padding-top: 0; } .about-carousel-nav { top: 50%; transform: translateY(-50%); right: -20px; flex-direction: column; } }
+
+@media (max-width: 991px) { .header-one-btn.quote-btn { display: none !important; } }
+
+.about-testimonials-carousel-wrapper .swiper-slide { height: auto !important; }

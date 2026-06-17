@@ -588,6 +588,10 @@
   border-radius: 14px;
   box-shadow: 0 20px 45px rgba(13, 24, 43, 0.06);
   padding: 38px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .feedbackHead {
@@ -595,11 +599,20 @@
   display: flex;
   gap: 20px;
   margin-bottom: 28px;
+  flex-wrap: nowrap;
+}
+
+.feedbackHead div {
+  flex: 1;
 }
 
 .feedbackHead img {
   border-radius: 50%;
   object-fit: contain;
+  flex-shrink: 0;
+  width: 66px !important;
+  height: 66px !important;
+  min-width: 66px !important;
 }
 
 .feedbackHead h3 {
@@ -618,6 +631,7 @@
   color: var(--integrity-grey);
   line-height: 1.7;
   margin: 0;
+  flex: 1;
 }
 
 @media (max-width: 1199px) {

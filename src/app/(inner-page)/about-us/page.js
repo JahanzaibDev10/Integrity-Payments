@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FooterOne from "@/components/footer/FooterOne";
 import HeaderOne from "@/components/header/HeaderOne";
 import styles from "./about-us.module.css";
-import { testimonials } from "@/data/siteContent";
+import AboutTestimonialsCarousel from "@/components/testimonials/AboutTestimonialsCarousel";
 
 export const metadata = {
   title: "About Us | Resilient Payments",
@@ -363,27 +363,7 @@ export default function AboutUsPage() {
                 </div>
               </div>
             </div>
-            <div className={styles.feedbackGrid}>
-              {testimonials.slice(0, 2).map((item, idx) => (
-                <article className={styles.feedbackCard} key={idx}>
-                  <div className={styles.feedbackHead}>
-                    <Image
-                      src="/images/integrity-payments/logo.png"
-                      alt="Resilient Payments"
-                      width={66}
-                      height={66}
-                    />
-                    <div>
-                      <h3>{item.name}</h3>
-                      <span>{item.company}</span>
-                    </div>
-                  </div>
-                  <p>
-                    {item.quote}
-                  </p>
-                </article>
-              ))}
-            </div>
+            <AboutTestimonialsCarousel />
           </div>
         </section>
       </main>
