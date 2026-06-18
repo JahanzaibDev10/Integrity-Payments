@@ -6,7 +6,7 @@ export const site = {
   phoneHref: "tel:+18776391000",
   email: "info@resilientpayments.com",
   emailHref: "mailto:info@resilientpayments.com",
-  logo: "/images/integrity-payments/resilient-logo.png",
+  logo: "/images/integrity-payments/resilient-logo-header.png",
   footerLogo: "/images/integrity-payments/resilient-logo.png",
   favicon: "/images/integrity-payments/favicon-32.png",
   etaLogo: "/images/integrity-payments/eta-logo.png",

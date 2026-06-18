@@ -116,8 +116,8 @@ function HeaderOne() {
                                           className="integrity-header-logo-img"
                                           src={site.logo}
                                           alt={`${site.name} logo`}
-                                          width={480}
-                                          height={140}
+                                          width={1024}
+                                          height={465}
                                           priority
                                         />
                                     </Link>
