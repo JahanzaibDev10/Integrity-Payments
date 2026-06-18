@@ -6,9 +6,9 @@ export const site = {
   phoneHref: "tel:+18776391000",
   email: "info@resilientpayments.com",
   emailHref: "mailto:info@resilientpayments.com",
-  logo: "/images/integrity-payments/logo.png",
-  footerLogo: "/images/integrity-payments/integrity-logo-white.png",
-  favicon: "/images/integrity-payments/integrity-favicon.png",
+  logo: "/images/integrity-payments/resilient-logo.png",
+  footerLogo: "/images/integrity-payments/resilient-logo.png",
+  favicon: "/images/integrity-payments/favicon-32.png",
   etaLogo: "/images/integrity-payments/eta-logo.png",
   description:
     "Resilient Payments, Inc. is a team of national business consultants connecting our clients to numerous beneficial partners and products.",

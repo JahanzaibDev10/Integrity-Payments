@@ -28,3 +28,60 @@
 @media (max-width: 991px) { .header-one-btn.quote-btn { display: none !important; } }
 
 .about-testimonials-carousel-wrapper .swiper-slide { height: auto !important; }
+
+/* ── Logo size overrides (beat style.css hardcoded values) ── */
+
+/* Fix thumbnail container: flex + vertically centered */
+.header-main-one .thumbnail {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+
+/* Fix anchor: remove padding so logo fills the height naturally */
+.header-main-one .thumbnail a {
+  padding: 12px 0 12px 8px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Logo image: big, crisp, no offset */
+.header-main-one .thumbnail a img.integrity-header-logo-img {
+  width: auto !important;
+  max-width: 380px !important;
+  height: auto !important;
+  max-height: 120px !important;
+  object-fit: contain !important;
+  margin-left: 0 !important;
+  filter: drop-shadow(0 2px 10px rgba(0,0,0,0.12)) !important;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header-one .header-main-one .thumbnail a img.integrity-header-logo-img {
+    max-width: 340px !important;
+    max-height: 108px !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .header-main-one .thumbnail a img.integrity-header-logo-img {
+    max-width: 280px !important;
+    max-height: 90px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-main-one .thumbnail a img.integrity-header-logo-img {
+    max-width: 220px !important;
+    max-height: 72px !important;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .header-main-one .thumbnail a img.integrity-header-logo-img {
+    max-width: 170px !important;
+    max-height: 58px !important;
+  }
+}
+

@@ -232,7 +232,7 @@ export default function IntegrityPage({ slug }) {
                 <div className="rts-single-wized contact service">
                   <div className="wized-header">
                     <Link href="/">
-                      <img src="/images/integrity-payments/logo.png" alt={site.name} />
+                      <img src="/images/integrity-payments/resilient-logo.png" alt={site.name} style={{ width: '100%', maxWidth: '280px', height: 'auto', objectFit: 'contain' }} />
                     </Link>
                   </div>
                   <div className="wized-body">

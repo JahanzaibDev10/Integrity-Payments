@@ -33,10 +33,11 @@ function AboutTestimonialsCarousel() {
             <article className={styles.feedbackCard}>
               <div className={styles.feedbackHead}>
                 <Image
-                  src="/images/integrity-payments/logo.png"
+                  src="/images/integrity-payments/resilient-logo.png"
                   alt="Resilient Payments"
-                  width={66}
-                  height={66}
+                  width={220}
+                  height={80}
+                  style={{ objectFit: 'contain' }}
                 />
                 <div>
                   <h3>{item.name}</h3>

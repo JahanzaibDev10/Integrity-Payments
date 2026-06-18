@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="integrity-footer">
       <div className="integrity-container integrity-footer-main">
         <div className="integrity-footer-brand">
-          <Image src={site.footerLogo} alt="Resilient Payments" width={543} height={181} sizes="(max-width: 700px) 240px, 320px" />
+          <Image src={site.footerLogo} alt="Resilient Payments" width={600} height={200} sizes="(max-width: 700px) 280px, 380px" style={{ objectFit: 'contain', maxWidth: '380px', height: 'auto' }} />
           <ul>
             {site.footerBenefits.map((benefit) => (
               <li key={benefit}>- {benefit}</li>

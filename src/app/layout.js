@@ -18,7 +18,12 @@ export const metadata = {
   description:
     "Resilient Payments helps businesses with payments, payroll, lending, web development, ATM machines, business insurance, and partner programs.",
   icons: {
-    icon: "/images/integrity-payments/integrity-favicon.png",
+    icon: [
+      { url: "/images/integrity-payments/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/integrity-payments/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/images/integrity-payments/favicon-64.png", sizes: "64x64", type: "image/png" },
+    ],
+    apple: { url: "/images/integrity-payments/favicon-180.png", sizes: "180x180", type: "image/png" },
   },
 };
 

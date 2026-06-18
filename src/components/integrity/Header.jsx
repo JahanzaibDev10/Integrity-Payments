@@ -13,8 +13,8 @@ export default function Header() {
             className="integrity-logo"
             src={site.logo}
             alt="Resilient Payments"
-            width={320}
-            height={80}
+            width={480}
+            height={140}
             priority
           />
         </Link>
