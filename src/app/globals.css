@@ -741,6 +741,10 @@ nextjs-portal {
     width: min(310px, 82%);
   }
 
+  .rts-about-area .rts-title-area {
+    margin-top: 24px;
+  }
+
   .integrity-map-card {
     min-height: auto;
     padding: 28px;
